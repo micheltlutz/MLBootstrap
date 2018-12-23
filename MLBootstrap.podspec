@@ -11,8 +11,10 @@ Pod::Spec.new do |s|
  s.requires_arc = true
 
  s.default_subspec = "Core"
+ s.resources = "Resources/**/*"
  s.subspec "Core" do |ss|
      ss.source_files  = "Sources/**/*.swift"
      ss.framework  = "Foundation"
+     ss.framework  = "UIKit"
  end
 end

@@ -1,15 +1,19 @@
 //
 //  MLBootstrap.swift
-//  MLBootstrap
+//  MLBootstrap-iOS
 //
-//  Created by Michel Lutz on 02/10/17.
+//  Created by Michel Anderson Lutz Teixeira on 20/12/18.
 //  Copyright © 2017 micheltlutz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class MLBootstrap {
-    
-    static let name = "MLBootstrap"
-    
+open class MLBootstrap {
+    public static let name = "MLBootstrap"
+    public static let version: String = {
+        guard let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String else {
+            return "0.0"
+        }
+        return version
+    }()
 }
