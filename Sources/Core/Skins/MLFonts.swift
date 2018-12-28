@@ -7,8 +7,40 @@
 //
 
 import UIKit
+public struct MLFontManager {
+    static func loadAllFonts() {
+        print("bundleIdentifier: \(Bundle.main.bundleIdentifier!)")
+        for font in MLFonts.allCases {
+            registerFontWith(filename: font.filename,
+                                           bundleIdentifier: "me.micheltlutz.MLBootstrap")
+        }
+    }
 
-public enum MLFonts {
+    public static func loadFont(filename: String, bundleIdentifier: String) {
+        registerFontWith(filename: filename,
+                                       bundleIdentifier: bundleIdentifier)
+    }
+    static func registerFontWith(filename: String, bundleIdentifier: String) {
+
+        if let frameworkBundle = Bundle(identifier: bundleIdentifier) {
+            let pathForResource = frameworkBundle.path(forResource: filename, ofType: nil)
+            let fontData = NSData(contentsOfFile: pathForResource!)
+            let dataProvider = CGDataProvider(data: fontData!)
+            var errorRef: Unmanaged<CFError>? = nil
+            if let fontRef = CGFont(dataProvider!) {
+                if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
+                    print("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
+                }
+            } else {
+                print("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
+            }
+        }
+        else {
+            print("Failed to register font - bundle identifier invalid.")
+        }
+    }
+}
+public enum MLFonts: CaseIterable {
     case SFProTextLight
     case SFProTextRegular
     case SFProTextItalic
@@ -48,6 +80,35 @@ public enum MLFonts {
             return UIFont(name: "SFProDisplay-Semibold", size: CGFloat(size!))!
         case .SFProDisplayBold:
             return UIFont(name: "SFProDisplay-Bold", size: CGFloat(size!))!
+        }
+    }
+    // swiftlint:disable cyclomatic_complexity
+    public var filename: String {
+        switch self {
+        case .SFProTextLight:
+            return "SF-Pro-Text-Light.otf"
+        case .SFProTextRegular:
+            return "SF-Pro-Text-Regular.otf"
+        case .SFProTextItalic:
+            return "SF-Pro-Text-RegularItalic.otf"
+        case .SFProTextMedium:
+            return "SF-Pro-Text-Medium.otf"
+        case .SFProTextSemibold:
+            return "SF-Pro-Text-Semibold.otf"
+        case .SFProTextbold:
+            return "SF-Pro-Text-Bold.otf"
+        case .SFProTextHeavy:
+            return "SF-Pro-Text-Heavy.otf"
+        case .SFProDisplayUltraLight:
+            return "SF-Pro-Display-Ultralight.otf"
+        case .SFProDisplayLight:
+            return "SF-Pro-Display-Light.otf"
+        case .SFProDisplayLightIta:
+            return "SF-Pro-Display-LightItalic.otf"
+        case .SFProDisplaySemibold:
+            return "SF-Pro-Display-Semibold.otf"
+        case .SFProDisplayBold:
+            return "SF-Pro-Display-Bold.otf"
         }
     }
 }
