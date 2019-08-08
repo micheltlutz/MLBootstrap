@@ -5,21 +5,20 @@
 //  Created by Michel Lutz on 04/10/16.
 //  Copyright © 2017 micheltlutz. All rights reserved.
 //
+import XCTest
 
-import Quick
-import Nimble
 @testable import MLBootstrap
 
-class MLBootstrapSpec: QuickSpec {
+class MLBootstrapSpec: XCTestCase {
 
-    override func spec() {
-
-        describe("MLBootstrapSpec") {
-            it("works") {
-                expect(MLBootstrap.name) == "MLBootstrap"
-            }
-        }
-
-    }
+//    override func spec() {
+//
+//        describe("MLBootstrapSpec") {
+//            it("works") {
+//                expect(MLBootstrap.name) == "MLBootstrap"
+//            }
+//        }
+//
+//    }
 
 }

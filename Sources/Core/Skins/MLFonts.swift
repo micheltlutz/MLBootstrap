@@ -9,7 +9,6 @@
 import UIKit
 public struct MLFontManager {
     static func loadAllFonts() {
-        print("bundleIdentifier: \(Bundle.main.bundleIdentifier!)")
         for font in MLFonts.allCases {
             registerFontWith(filename: font.filename,
                                            bundleIdentifier: "me.micheltlutz.MLBootstrap")
