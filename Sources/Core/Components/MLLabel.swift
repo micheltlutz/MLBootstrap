@@ -67,3 +67,23 @@ extension MLLabel {
         self.sizeToFit()
     }
 }
+
+
+extension MLLabel {
+    func typingAnimate(text: String, timer: Double = 0.12) {
+        self.text = ""
+        let characters = text.map { $0 }
+        var index = 0
+        Timer.scheduledTimer(withTimeInterval: timer, repeats: true, block: { [weak self] timer in
+            guard let self = self else { return }
+            if index < text.count {
+                let char = characters[index]
+                self.text! += "\(char)"
+                print(char)
+                index += 1
+            } else {
+                timer.invalidate()
+            }
+        })
+    }
+}

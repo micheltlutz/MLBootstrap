@@ -24,6 +24,8 @@ public enum MLColorPallet: String, MLColorPalletProtocol {
     case pink = "8E44AD"
     case purple = "5C2C70"
     case yellow = "F1C40F"
+    case orange = "FF9500"
+    case indigo = "5856D6"
     case darkYellow = "C29E0C"
     case babyBlue = "2980B9"
     case babyDarkBlue = "1B557A"

@@ -6,4 +6,9 @@
 //  Copyright © 2019 micheltlutz. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+public protocol MLImagesProtocol {
+    func name() -> String
+    func image() -> UIImage?
+}
