@@ -70,7 +70,7 @@ extension MLLabel {
 
 
 extension MLLabel {
-    func typingAnimate(text: String, timer: Double = 0.12) {
+    public func typingAnimate(text: String, timer: Double = 0.12) {
         self.text = ""
         let characters = text.map { $0 }
         var index = 0
