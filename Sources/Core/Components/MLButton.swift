@@ -10,7 +10,7 @@ import UIKit
 
 open class MLButton: UIButton {
     public static let name = "MLButton"
-    
+
     public init(text: String) {
         super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
@@ -28,7 +28,7 @@ open class MLButton: UIButton {
         setBackgroundImage(MLColorPallet.black.imageFromColor(alpha: 0.3), for: .highlighted)
         setBackgroundImage(MLColorPallet.black.imageFromColor(alpha: 0.05), for: .disabled)
     }
-    
+
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

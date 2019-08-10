@@ -26,22 +26,22 @@ public struct RuntimeUtils {
         //        return languageCode + "-" + regionCode
         return "pt-BR"
     }
-    
+
     public static func defaultLocale() -> Locale {
         return Locale(identifier: "pt_BR")
     }
-    
+
     public static func defaultTimeZone() -> TimeZone {
         guard let timeZone = TimeZone(abbreviation: "BRT") else { return Calendar.current.timeZone }
         return timeZone
     }
-    
+
     public enum StatusBarColors {
         case red
         case white
         case clear
     }
-    
+
     public static func changeStatusBarColor(type: StatusBarColors) {
         switch type {
         case .red:
@@ -65,7 +65,8 @@ public struct RuntimeUtils {
         }
     }
 
-    public static func alertController(message: String, title: String = "", okAction: UIAlertAction? = nil) -> UIAlertController {
+    public static func alertController(message: String, title: String = "",
+                                       okAction: UIAlertAction? = nil) -> UIAlertController {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         var OKAction: UIAlertAction!
         if let action = okAction {

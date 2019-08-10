@@ -23,7 +23,7 @@ public struct DevUtils {
         UIColor(red: 0.237255, green: 0.241176, blue: 0.233333, alpha: 1),
         UIColor.purple
     ]
-    
+
     public static func randomizedColor() -> UIColor {
         return DevUtils.randomColors[Int(arc4random_uniform(UInt32(DevUtils.randomColors.count)))]
     }

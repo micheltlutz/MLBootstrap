@@ -41,7 +41,10 @@ public struct MLMath {
         return (red: Float(red), green: Float(green), blue: Float(blue))
     }
     // swiftlint:disable large_tuple
-    public static func calcColor(red: Float, green: Float, blue: Float, percent: Float) -> (red: Float, green: Float, blue: Float) {
+    public static func calcColor(red: Float,
+                                 green: Float,
+                                 blue: Float,
+                                 percent: Float) -> (red: Float, green: Float, blue: Float) {
         let redn = red / 255
         let greenn = green / 255
         let bluen = blue / 255

@@ -19,22 +19,23 @@ public struct MLFontManager {
         registerFontWith(filename: filename,
                                        bundleIdentifier: bundleIdentifier)
     }
-    static func registerFontWith(filename: String, bundleIdentifier: String) {
 
+    static func registerFontWith(filename: String, bundleIdentifier: String) {
         if let frameworkBundle = Bundle(identifier: bundleIdentifier) {
             let pathForResource = frameworkBundle.path(forResource: filename, ofType: nil)
             let fontData = NSData(contentsOfFile: pathForResource!)
             let dataProvider = CGDataProvider(data: fontData!)
-            var errorRef: Unmanaged<CFError>? = nil
+            var errorRef: Unmanaged<CFError>?
             if let fontRef = CGFont(dataProvider!) {
                 if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
+                    // swiftlint:disable line_length
                     print("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
                 }
             } else {
+                // swiftlint:disable
                 print("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
             }
-        }
-        else {
+        } else {
             print("Failed to register font - bundle identifier invalid.")
         }
     }
@@ -81,7 +82,7 @@ public enum MLFonts: CaseIterable {
             return UIFont(name: "SFProDisplay-Bold", size: CGFloat(size!))!
         }
     }
-    // swiftlint:disable cyclomatic_complexity
+
     public var filename: String {
         switch self {
         case .SFProTextLight:

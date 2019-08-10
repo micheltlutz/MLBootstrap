@@ -31,7 +31,7 @@ public enum MLColorPallet: String, MLColorPalletProtocol {
     case babyDarkBlue = "1B557A"
     case darkGrey = "333333"
     case black = "000000"
-    
+
     public var hex: String {
         return self.rawValue
     }
@@ -41,18 +41,18 @@ public enum MLColorPallet: String, MLColorPalletProtocol {
     public var cgColor: CGColor {
         return UIColor(hex: self.rawValue).cgColor
     }
-    
+
     public func color(percent: Int) -> UIColor {
         let rgb = MLMath.hexToRGB(hex: self.rawValue)
         let calc = MLMath.calcColor(red: rgb.red, green: rgb.green, blue: rgb.blue, percent: Float(percent))
         return UIColor(red: CGFloat(calc.red), green: CGFloat(calc.green), blue: CGFloat(calc.blue), alpha: 1)
     }
-    
+
     public func color(alpha: CGFloat) -> UIColor {
         let colorAlpha = UIColor(hex: self.rawValue).withAlphaComponent(alpha)
         return colorAlpha
     }
-    
+
     public func imageFromColor() -> UIImage {
         let size = CGSize(width: 1, height: 1)
         let color = UIColor(hex: self.rawValue)
@@ -61,7 +61,7 @@ public enum MLColorPallet: String, MLColorPalletProtocol {
             rendererContext.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
         }
     }
-    
+
     public func imageFromColor(alpha: CGFloat) -> UIImage {
         let size = CGSize(width: 1, height: 1)
         let color = UIColor(hex: self.rawValue).withAlphaComponent(alpha)

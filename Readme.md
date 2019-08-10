@@ -19,8 +19,8 @@ Bootstrap for swift apps
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 10.0+
+- iOS 11.0+
+- Xcode 10.2+
 
 ## Installation
 
@@ -38,10 +38,10 @@ To integrate MLBootstrap into your Xcode project using CocoaPods, specify it in 
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '11.0'
 use_frameworks!
 
-pod 'MLBootstrap', '~> 1.0.0'
+pod 'MLBootstrap', '~> 1.0.2'
 ```
 
 Then, run the following command:
@@ -67,7 +67,7 @@ $ brew install carthage
 To integrate MLBootstrap into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLBootstrap" ~> 1.0.0
+github "micheltlutz/MLBootstrap" ~> 1.0.2
 ```
 
 </details>
@@ -85,7 +85,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.0.0"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.0.2"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])

@@ -75,7 +75,7 @@ public struct DateUtils {
 //        }
         return formatter
     }
-    
+
     public static func stringDate(from date: Date) -> String {
         let formatter = DateUtils.formatterDateForLanguage()
         return formatter.string(from: date)
@@ -119,7 +119,6 @@ public struct DateUtils {
 
     public static func getMonthYear(from date: Date) -> (month: Int, year: Int) {
         let calendar = Calendar.current
-        
         let month = calendar.component(.month, from: date)
         let year = calendar.component(.year, from: date)
         return (month: month, year: year)
@@ -163,7 +162,7 @@ public struct DateUtils {
         }
         return false
     }
-    
+
     public static func generateDates(startDate: Date?, addbyUnit: Calendar.Component, value: Int) -> [Date] {
         var dates = [Date]()
         var date = startDate!
@@ -174,12 +173,12 @@ public struct DateUtils {
         }
         return dates
     }
-    
+    // swiftlint:disable identifier_name
     public static func timeLapsed(from: Date, to: Date, calendarComponent: Calendar.Component) -> DateComponents {
         let passed = Calendar.current.dateComponents([calendarComponent], from: from, to: to)
         return passed
     }
-    
+
     public static func monthYear(date: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM\nYY"
@@ -190,7 +189,7 @@ public struct DateUtils {
         }
         return ""
     }
-    
+
     public static func monthYear(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM\nYY"
@@ -198,7 +197,7 @@ public struct DateUtils {
         formatter.locale = RuntimeUtils.defaultLocale()
         return formatter.string(from: date)
     }
-    
+
     public static func getDay(from date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "2018-09-24"
@@ -206,7 +205,7 @@ public struct DateUtils {
         formatter.locale = RuntimeUtils.defaultLocale()
         return formatter.string(from: date)
     }
-    
+
     public static func getDay(from date: String) -> String {
         let formatter = DateUtils.formatter
         formatter.dateFormat = "yyyy-MM-dd"

@@ -10,7 +10,7 @@ import UIKit
 
 open class MLField: UITextField {
     public static let name = "MLField"
-    
+
     public init(placeHolder: String) {
         super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
@@ -19,11 +19,12 @@ open class MLField: UITextField {
         font = MLFonts.SFProDisplayLight.font(size: 20)
         heightAnchor.constraint(equalToConstant: MLSizes.size(multiple: 5)).isActive = true
         layer.cornerRadius = MLSizes.size(multiple: 5) / 2
+        let attr = [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
         attributedPlaceholder = NSAttributedString(string: placeHolder,
-                                                   attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+                                                   attributes: attr)
         textAlignment = .center
     }
-    
+
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

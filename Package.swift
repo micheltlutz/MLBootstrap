@@ -14,7 +14,7 @@ let package = Package(
     products: [
         .library(
             name: "MLBootstrap",
-            targets: ["MLBootstrap"]),
+            targets: ["MLBootstrap"])
         ],
     dependencies: [],
     targets: [
