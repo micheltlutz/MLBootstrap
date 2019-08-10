@@ -12,10 +12,6 @@ struct MLBootstrapLabelSkin {
     var textColor: UIColor = .white
 }
 
-struct MLBootstrapButtonSkin {
-    
-}
+struct MLBootstrapButtonSkin {}
 
-struct MLBootstrapFieldSkin {
-    
-}
+struct MLBootstrapFieldSkin {}

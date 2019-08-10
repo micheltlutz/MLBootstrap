@@ -22,11 +22,13 @@ extension UIView {
         set {
             if let newValue = newValue {
                 // Computed properties get stored as associated objects
-                objc_setAssociatedObject(self, &AssociatedObjectKeys.tapGestureRecognizer, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+                objc_setAssociatedObject(self, &AssociatedObjectKeys.tapGestureRecognizer,
+                                         newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
             }
         }
         get {
-            let tapGestureRecognizerActionInstance = objc_getAssociatedObject(self, &AssociatedObjectKeys.tapGestureRecognizer) as? Action
+            let tapGestureRecognizerActionInstance = objc_getAssociatedObject(self,
+                                                     &AssociatedObjectKeys.tapGestureRecognizer) as? Action
             return tapGestureRecognizerActionInstance
         }
     }

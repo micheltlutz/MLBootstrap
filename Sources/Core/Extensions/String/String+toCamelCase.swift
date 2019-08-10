@@ -9,7 +9,10 @@
 import Foundation
 extension String {
     public func toCamelCase() -> String {
-        return self.replacingOccurrences(of: "([A-Z])", with: " $1", options: .regularExpression, range: self.range(of: self))
+        return self.replacingOccurrences(of: "([A-Z])",
+                                         with: " $1",
+                                         options: .regularExpression,
+                                         range: self.range(of: self))
             .trimmingCharacters(in: .whitespacesAndNewlines)
             .capitalized
     }

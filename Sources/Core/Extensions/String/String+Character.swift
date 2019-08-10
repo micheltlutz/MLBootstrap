@@ -9,8 +9,8 @@
 import Foundation
 
 extension String {
-    public subscript (i: Int) -> Character {
-        return self[index(startIndex, offsetBy: i)]
+    public subscript (integer: Int) -> Character {
+        return self[index(startIndex, offsetBy: integer)]
     }
     public subscript (bounds: CountableRange<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
@@ -38,8 +38,8 @@ extension String {
 }
 
 extension Substring {
-    public subscript (i: Int) -> Character {
-        return self[index(startIndex, offsetBy: i)]
+    public subscript (integer: Int) -> Character {
+        return self[index(startIndex, offsetBy: integer)]
     }
     public subscript (bounds: CountableRange<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)

@@ -21,7 +21,7 @@ extension MLViewConfiguration {
         setupConstraints()
         configureViews()
     }
-    
+
     public func configureViews() {
     }
 }
