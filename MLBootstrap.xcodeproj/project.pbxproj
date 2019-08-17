@@ -41,6 +41,7 @@
 		D07D317022FEEE1A004403D5 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B621CFABA400662A11 /* SF-Pro-Text-RegularItalic.otf */; };
 		D07D317122FEEE1A004403D5 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B721CFABA400662A11 /* SF-Pro-Text-Semibold.otf */; };
 		D07D317222FEEE1A004403D5 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B821CFABA400662A11 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		D09102FC2308BE5800EC5D45 /* MLSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */; };
 		D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */; };
 		D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */; };
 		D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */; };
@@ -99,6 +100,7 @@
 		3549BB8A1DA38C0A00C63030 /* MLBootstrapSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLBootstrapSpec.swift; sourceTree = "<group>"; };
 		359649021FB18CBF00FC7ADC /* MLBootstrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLBootstrap.swift; sourceTree = "<group>"; };
 		D03A142021E416E700C0988E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeUtils.swift; sourceTree = "<group>"; };
 		D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevUtils.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				D0F3818621CC5F7300662A11 /* MLButton.swift */,
 				D0F3818821CC60BB00662A11 /* MLField.swift */,
 				D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */,
+				D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				D0F3824D21CFB57E00662A11 /* String+heightWithConstrainedWidth.swift in Sources */,
 				D0F3825721CFB5A300662A11 /* String+Extensions.swift in Sources */,
 				D0F3823D21CFB34700662A11 /* MLViewConfiguration.swift in Sources */,
+				D09102FC2308BE5800EC5D45 /* MLSimpleButton.swift in Sources */,
 				D0F3818D21CC67B700662A11 /* MLColorPallet.swift in Sources */,
 				D0F3825C21CFB5AC00662A11 /* String+toCamelCase.swift in Sources */,
 				D0F3818721CC5F7300662A11 /* MLButton.swift in Sources */,

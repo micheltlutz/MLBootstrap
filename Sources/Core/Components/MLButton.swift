@@ -29,6 +29,7 @@ open class MLButton: UIButton {
         setBackgroundImage(MLColorPallet.black.imageFromColor(alpha: 0.05), for: .disabled)
     }
 
+    @available(*, unavailable)
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
