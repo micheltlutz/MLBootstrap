@@ -100,6 +100,7 @@
 		3549BB8A1DA38C0A00C63030 /* MLBootstrapSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLBootstrapSpec.swift; sourceTree = "<group>"; };
 		359649021FB18CBF00FC7ADC /* MLBootstrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLBootstrap.swift; sourceTree = "<group>"; };
 		D03A142021E416E700C0988E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
 		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeUtils.swift; sourceTree = "<group>"; };
@@ -178,6 +179,7 @@
 		3549BAFB1DA387DB00C63030 = {
 			isa = PBXGroup;
 			children = (
+				D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */,
 				D0F3826621CFC30200662A11 /* Resources */,
 				3549BB161DA3890B00C63030 /* Sources */,
 				3549BB191DA3890B00C63030 /* Tests */,
