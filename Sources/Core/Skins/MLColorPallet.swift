@@ -21,7 +21,7 @@ public enum MLColorPallet: String, MLColorPalletProtocol {
     case darkRed = "A31E36"
     case deepOceanBlue = "2C3E50"
     case deepOceanDarkBlue = "29394A"
-    case pink = "8E44AD"
+    case pink = "FF2D55"
     case purple = "5C2C70"
     case yellow = "F1C40F"
     case orange = "FF9500"

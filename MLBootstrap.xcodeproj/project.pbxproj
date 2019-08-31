@@ -263,10 +263,10 @@
 		D0F3819021CC682300662A11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D0F3819621CC697600662A11 /* UIControl+addAction.swift */,
-				D0F3825121CFB58D00662A11 /* UIView+tapGesture.swift */,
 				D0F3826521CFB5BF00662A11 /* String */,
 				D0F3818E21CC681A00662A11 /* UIColor+Hex.swift */,
+				D0F3819621CC697600662A11 /* UIControl+addAction.swift */,
+				D0F3825121CFB58D00662A11 /* UIView+tapGesture.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,8 +289,8 @@
 				D0F3818A21CC652100662A11 /* MLBootstrapSkin.swift */,
 				D0F3818C21CC67B700662A11 /* MLColorPallet.swift */,
 				D0F3823121CFAC4500662A11 /* MLFonts.swift */,
-				D0F3823621CFAE6B00662A11 /* MLSizes.swift */,
 				D0B862EE22FA70F3002E9FB4 /* MLImages.swift */,
+				D0F3823621CFAE6B00662A11 /* MLSizes.swift */,
 			);
 			path = Skins;
 			sourceTree = "<group>";
@@ -343,11 +343,11 @@
 		D0F3823B21CFB1ED00662A11 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D0F3818421CC5DB100662A11 /* MLLabel.swift */,
 				D0F3818621CC5F7300662A11 /* MLButton.swift */,
 				D0F3818821CC60BB00662A11 /* MLField.swift */,
-				D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */,
+				D0F3818421CC5DB100662A11 /* MLLabel.swift */,
 				D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */,
+				D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";

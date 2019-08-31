@@ -14,8 +14,9 @@ open class MLButton: UIButton {
     public init(text: String) {
         super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
-        heightAnchor.constraint(equalToConstant: MLSizes.size(multiple: 6)).isActive = true
-        layer.cornerRadius = 10
+        let height = MLSizes.size(multiple: 5)
+        heightAnchor.constraint(equalToConstant: height).isActive = true
+        layer.cornerRadius = height / 2
         clipsToBounds = true
         setTitle(text, for: .normal)
         backgroundColor = MLColorPallet.black.color(alpha: 0.1)
