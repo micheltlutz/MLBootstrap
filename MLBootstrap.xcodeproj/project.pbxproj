@@ -11,6 +11,9 @@
 		3549BB661DA38ADB00C63030 /* MLBootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* MLBootstrap.framework */; };
 		3549BB8B1DA38C0A00C63030 /* MLBootstrapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* MLBootstrapSpec.swift */; };
 		359649031FB18CC000FC7ADC /* MLBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359649021FB18CBF00FC7ADC /* MLBootstrap.swift */; };
+		D01FD2502339A9E800B8BBD6 /* CustomFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FD24F2339A9E800B8BBD6 /* CustomFormatter.swift */; };
+		D01FD2522339AA2200B8BBD6 /* GeneralFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FD2512339AA2200B8BBD6 /* GeneralFormatter.swift */; };
+		D01FD2542339AA5100B8BBD6 /* PhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */; };
 		D07D315522FEEE1A004403D5 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F3819B21CFABA400662A11 /* SF-Pro-Display-Black.otf */; };
 		D07D315622FEEE1A004403D5 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F3819C21CFABA400662A11 /* SF-Pro-Display-BlackItalic.otf */; };
 		D07D315722FEEE1A004403D5 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F3819D21CFABA400662A11 /* SF-Pro-Display-Bold.otf */; };
@@ -99,6 +102,9 @@
 		3549BB611DA38ADB00C63030 /* MLBootstrapTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MLBootstrapTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549BB8A1DA38C0A00C63030 /* MLBootstrapSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLBootstrapSpec.swift; sourceTree = "<group>"; };
 		359649021FB18CBF00FC7ADC /* MLBootstrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLBootstrap.swift; sourceTree = "<group>"; };
+		D01FD24F2339A9E800B8BBD6 /* CustomFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormatter.swift; sourceTree = "<group>"; };
+		D01FD2512339AA2200B8BBD6 /* GeneralFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFormatter.swift; sourceTree = "<group>"; };
+		D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
 		D03A142021E416E700C0988E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
 		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
@@ -254,6 +260,16 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		D01FD24E2339A9D300B8BBD6 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				D01FD24F2339A9E800B8BBD6 /* CustomFormatter.swift */,
+				D01FD2512339AA2200B8BBD6 /* GeneralFormatter.swift */,
+				D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
 		D03A141F21E416E700C0988E /* MLBootstrapFonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +292,7 @@
 		D0F3819121CC686D00662A11 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D01FD24E2339A9D300B8BBD6 /* Formatter */,
 				D0F3819321CC68A500662A11 /* ClosureAttach.swift */,
 				D0F3819221CC68A500662A11 /* MLMath.swift */,
 				D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */,
@@ -551,7 +568,9 @@
 				D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */,
 				D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */,
 				D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */,
+				D01FD2502339A9E800B8BBD6 /* CustomFormatter.swift in Sources */,
 				D0B862EF22FA70F3002E9FB4 /* MLImages.swift in Sources */,
+				D01FD2542339AA5100B8BBD6 /* PhoneFormatter.swift in Sources */,
 				D0F3818F21CC681A00662A11 /* UIColor+Hex.swift in Sources */,
 				D0F3824321CFB54300662A11 /* UIView+constraint.swift in Sources */,
 				D0F3819721CC697600662A11 /* UIControl+addAction.swift in Sources */,
@@ -570,6 +589,7 @@
 				D0F3823221CFAC4500662A11 /* MLFonts.swift in Sources */,
 				D0F3819421CC68A500662A11 /* MLMath.swift in Sources */,
 				D0F3826121CFB5B400662A11 /* String+Character.swift in Sources */,
+				D01FD2522339AA2200B8BBD6 /* GeneralFormatter.swift in Sources */,
 				D0F3819521CC68A500662A11 /* ClosureAttach.swift in Sources */,
 				D0F3825221CFB58E00662A11 /* UIView+tapGesture.swift in Sources */,
 				D0F3823721CFAE6B00662A11 /* MLSizes.swift in Sources */,
