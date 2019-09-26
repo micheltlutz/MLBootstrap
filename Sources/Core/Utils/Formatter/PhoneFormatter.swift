@@ -10,7 +10,7 @@ import UIKit
 
 public struct PhoneFormatter: CustomFormatter {
     public var maxLength: Int = 15
-
+    //swiftlint:disable function_body_length
     public func format(value: String) -> String {
         let formattedString = NSMutableString(string: value.digitsOnly)
 
