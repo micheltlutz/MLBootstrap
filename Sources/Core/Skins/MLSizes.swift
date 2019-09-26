@@ -10,11 +10,15 @@ import UIKit
 
 public struct MLSizes {
     public static let baseSquareSize: CGFloat = 8.0
-    public static func size(multiple: CGFloat, negative: Bool? = false) -> CGFloat {
-        if negative != nil && negative! == true {
-            return (MLSizes.baseSquareSize * multiple) * -1
+    public static func size(multiple: CGFloat) -> CGFloat {
+        var base = MLSizes.baseSquareSize
+        switch MLSizes.screenType {
+        case .iPhones_4_4S, .iPhones_5_5s_5c_SE:
+            base = MLSizes.baseSquareSize / 2
+        default:
+            base = MLSizes.baseSquareSize
         }
-        return MLSizes.baseSquareSize * multiple
+        return base * multiple
     }
     public static func printScreenSizes() {
         print("WIDTH: \(UIScreen.main.bounds.width) \n", "HEIGHT: \(UIScreen.main.bounds.height) \n")
@@ -25,14 +29,14 @@ public struct MLSizes {
     public static func screenHeight() -> CGFloat {
         return UIScreen.main.bounds.height
     }
-    var iPhoneX: Bool {
+    public var iPhoneX: Bool {
         return UIScreen.main.nativeBounds.height == 2436
     }
-    var iPhone: Bool {
+    public var iPhone: Bool {
         return UIDevice.current.userInterfaceIdiom == .phone
     }
     //swiftlint:disable identifier_name
-    enum ScreenType: String {
+    public enum ScreenType: String {
         case iPhones_4_4S = "iPhone 4 or iPhone 4S"
         case iPhones_5_5s_5c_SE = "iPhone 5, iPhone 5s, iPhone 5c or iPhone SE"
         case iPhones_6_6s_7_8 = "iPhone 6, iPhone 6S, iPhone 7 or iPhone 8"
@@ -42,7 +46,7 @@ public struct MLSizes {
         case iPhone_XSMax = "iPhone XS Max"
         case unknown
     }
-    var screenType: ScreenType {
+    public static var screenType: ScreenType {
         switch UIScreen.main.nativeBounds.height {
         case 960:
             return .iPhones_4_4S
