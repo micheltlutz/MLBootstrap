@@ -15,6 +15,7 @@ public protocol CustomFormatter {
 }
 
 extension CustomFormatter {
+    //swiftlint:disable vertical_parameter_alignment
     public func shouldChangeCharacters(of textField: UITextField,
                                      inRange range: NSRange,
                                      typedText: String,

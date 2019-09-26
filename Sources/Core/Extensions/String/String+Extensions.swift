@@ -50,7 +50,7 @@ extension String {
         text = text.replacingOccurrences(of: ":", with: "", options: .literal, range: nil)
         return text
     }
-
+    //swiftlint:disable line_length
     public func withoutSpecialCharacters(andSpace: Bool = false) -> String {
         var possibleCharacters = Set("aáâãbcdeéêfghiíjklmnoóôõpqrstuúüvwxyzAÁÂÃBCDEÉÊFGHIÍJKLKMNOÓÔÕPQRSTUÚÜVWXYZ1234567890")
 
