@@ -20,7 +20,7 @@ Bootstrap for swift apps
 ## Requirements
 
 - iOS 11.0+
-- Xcode 10.2+
+- Xcode 11+
 
 ## Installation
 
@@ -163,6 +163,81 @@ $ git submodule update --init --recursive
 </p></details>
 
 ## Usage
+
+### MLLabel
+
+
+```swift
+//Default
+MLLabel(text: String, fontSize: Int = 18)
+
+// With NSMutableAttributedString
+MLLabel(textLabel: NSMutableAttributedString,
+		 color: String? = MLColorPallet.darkGrey.hex,
+		 size: Int? = 14)
+		 
+// With NSMutableAttributedString
+MLLabel(textLabel: NSMutableAttributedString,
+		 color: String? = MLColorPallet.darkGrey.hex,
+		 size: Int? = 14)
+		 
+// With NSAttributedString
+MLLabel(textLabel: NSAttributedString,
+		 color: String? = MLColorPallet.darkGrey.hex,
+		 size: Int? = 14)
+		 
+// Paragraph with lineHeigt
+mllabel.paragraphStyleWith(attributedString: NSMutableAttributedString, maximunLineHeight: CGFloat)
+
+// Typing Animate
+let mllabel = MLLabel(text: "", fontSize: 18)
+mllabel.typingAnimate(text: "Hello, typeing message label", timer: 0.15) {
+```
+
+### MLButton
+
+```swift
+let mlButton = MLButton(text: "Send")
+```
+
+### MLSimpleButton
+
+```swift
+let mlSimpleButton = MLSimpleButton(text: "Forgot password?")
+```
+
+### MLViewConfiguration - ViewConfiguration Helper
+```swift
+
+final class MyViewController: UIViewController {
+	override viewDidLoad() {
+		super.viewDidLoad()
+		
+		setupViewConfiguration()
+	}
+
+}
+
+
+extension MyViewController: MLViewConfiguration {
+	setupConstraints() {
+	let defaultWidth = MLSizes.screenWidth() * 0.8
+        NSLayoutConstraint.activate([
+            fieldName.topAnchor.constraint(equalTo: view.topAnchor, constant: MLSizes.size(multiple: 3)),
+            fieldName.widthAnchor.constraint(equalToConstant: defaultWidth),
+            fieldName.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            )]
+	}
+	
+	buildViewHierarchy(){
+       view.addSubview(fieldName)
+	}
+	
+	func configureViews() {
+        view.backgroundColor = .white
+    }
+}
+```
 
 ## Contributing
 
