@@ -25,7 +25,6 @@ let package = Package(
             name: "MLBootstrap",
             dependencies: [],
             path: "Sources"),
-        re
         .testTarget(
             name: "MLBootstrapTests",
             dependencies: ["MLBootstrap"],
