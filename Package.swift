@@ -11,6 +11,9 @@ import PackageDescription
 
 let package = Package(
     name: "MLBootstrap",
+    platforms: [
+        .iOS(.v8)
+    ],
     products: [
         .library(
             name: "MLBootstrap",
@@ -26,5 +29,6 @@ let package = Package(
             name: "MLBootstrapTests",
             dependencies: ["MLBootstrap"],
             path: "Tests")
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
