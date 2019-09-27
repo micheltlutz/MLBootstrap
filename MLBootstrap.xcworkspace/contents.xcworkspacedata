@@ -44,9 +44,6 @@
       location = "group:Package.swift">
    </FileRef>
    <FileRef
-      location = "group:Package.resolved">
-   </FileRef>
-   <FileRef
       location = "group:MLBootstrap.podspec">
    </FileRef>
 </Workspace>
