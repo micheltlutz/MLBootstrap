@@ -7,37 +7,39 @@
 //
 
 import UIKit
+
 public struct MLFontManager {
     static func loadAllFonts() {
         for font in MLFonts.allCases {
-            registerFontWith(filename: font.filename,
-                                           bundleIdentifier: "me.micheltlutz.MLBootstrap")
+            registerFontWith(filename: font.filename)
         }
     }
 
     public static func loadFont(filename: String, bundleIdentifier: String) {
-        registerFontWith(filename: filename,
-                                       bundleIdentifier: bundleIdentifier)
+        registerFontWith(filename: filename)
     }
 
-    static func registerFontWith(filename: String, bundleIdentifier: String) {
-        if let frameworkBundle = Bundle(identifier: bundleIdentifier) {
-            let pathForResource = frameworkBundle.path(forResource: filename, ofType: nil)
-            let fontData = NSData(contentsOfFile: pathForResource!)
-            let dataProvider = CGDataProvider(data: fontData!)
-            var errorRef: Unmanaged<CFError>?
-            if let fontRef = CGFont(dataProvider!) {
-                if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
-                    // swiftlint:disable line_length
-                    print("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
-                }
-            } else {
-                // swiftlint:disable
-                print("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
+    static func registerFontWith(filename: String) {
+        let bundleddd = Bundle(for: MLBootstrap.self)
+        let pathForResourcedddd = bundleddd.path(forResource: filename, ofType: nil)
+        //let test = Bundle.main.path(forResource: "SF-Pro-Text-Light", ofType: "otf")
+        print("filename: \(pathForResourcedddd)")
+
+        let frameworkBundle = Bundle(for: MLBootstrap.self)
+        let pathForResource = frameworkBundle.path(forResource: filename, ofType: nil)
+        let fontData = NSData(contentsOfFile: pathForResource!)
+        let dataProvider = CGDataProvider(data: fontData!)
+        var errorRef: Unmanaged<CFError>?
+        if let fontRef = CGFont(dataProvider!) {
+            if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
+                // swiftlint:disable line_length
+                fatalError("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
             }
         } else {
-            print("Failed to register font - bundle identifier invalid.")
+            // swiftlint:disable line_length
+            fatalError("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
         }
+
     }
 }
 public enum MLFonts: CaseIterable {
