@@ -23,8 +23,7 @@ let package = Package(
     targets: [
         .target(
             name: "MLBootstrap",
-            dependencies: [],
-            path: "Sources"),
+            dependencies: []),
         .testTarget(
             name: "MLBootstrapTests",
             dependencies: ["MLBootstrap"],
