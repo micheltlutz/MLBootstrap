@@ -20,7 +20,7 @@ let package = Package(
     targets: [
         .target(
             name: "MLBootstrap",
-            dependencies: ["UIKit"],
+            dependencies: [],
             path: "Sources"),
         .testTarget(
             name: "MLBootstrapTests",
