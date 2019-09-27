@@ -72,7 +72,7 @@ extension MLLabel {
 }
 
 extension MLLabel {
-    public func typingAnimate(text: String, timer: Double = 0.12) {
+    public func typingAnimate(text: String, timer: Double = 0.15) {
         self.text = ""
         let characters = text.map { $0 }
         var index = 0
@@ -81,7 +81,6 @@ extension MLLabel {
             if index < text.count {
                 let char = characters[index]
                 self.text! += "\(char)"
-                print(char)
                 index += 1
             } else {
                 timer.invalidate()

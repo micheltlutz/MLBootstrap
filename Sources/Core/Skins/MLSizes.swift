@@ -10,15 +10,20 @@ import UIKit
 
 public struct MLSizes {
     public static let baseSquareSize: CGFloat = 8.0
-    public static func size(multiple: CGFloat) -> CGFloat {
+    public static func size(multiple: CGFloat, scale: Bool = false) -> CGFloat {
         var base = MLSizes.baseSquareSize
-        switch MLSizes.screenType {
-        case .iPhones_4_4S, .iPhones_5_5s_5c_SE:
-            base = MLSizes.baseSquareSize / 2
-        default:
-            base = MLSizes.baseSquareSize
+        if scale {
+            switch MLSizes.screenType {
+            case .iPhones_4_4S, .iPhones_5_5s_5c_SE:
+                base = MLSizes.baseSquareSize / 2
+            default:
+                base = MLSizes.baseSquareSize
+            }
         }
         return base * multiple
+    }
+    public static func size(multiple: CGFloat) -> CGFloat {
+        return MLSizes.baseSquareSize * multiple
     }
     public static func printScreenSizes() {
         print("WIDTH: \(UIScreen.main.bounds.width) \n", "HEIGHT: \(UIScreen.main.bounds.height) \n")
