@@ -109,7 +109,6 @@
 		D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
 		D034836F233D929200A1577F /* String+SimpleHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleHTML.swift"; sourceTree = "<group>"; };
 		D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+HTML.swift"; sourceTree = "<group>"; };
-		D03A142021E416E700C0988E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
 		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
@@ -190,10 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */,
-				D0F3826621CFC30200662A11 /* Resources */,
 				3549BB161DA3890B00C63030 /* Sources */,
 				3549BB191DA3890B00C63030 /* Tests */,
-				D03A141F21E416E700C0988E /* MLBootstrapFonts */,
 				3549BB061DA387DB00C63030 /* Products */,
 				357D954B1DA3F2B400AEC55F /* Frameworks */,
 			);
@@ -211,6 +208,7 @@
 		3549BB161DA3890B00C63030 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D0F3826621CFC30200662A11 /* Resources */,
 				359649011FB18CBF00FC7ADC /* Core */,
 				3549BB541DA38A4000C63030 /* Supporting Files */,
 			);
@@ -272,14 +270,6 @@
 				D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */,
 			);
 			path = Formatter;
-			sourceTree = "<group>";
-		};
-		D03A141F21E416E700C0988E /* MLBootstrapFonts */ = {
-			isa = PBXGroup;
-			children = (
-				D03A142021E416E700C0988E /* Info.plist */,
-			);
-			path = MLBootstrapFonts;
 			sourceTree = "<group>";
 		};
 		D0F3819021CC682300662A11 /* Extensions */ = {
@@ -757,7 +747,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 1.0.13;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -780,7 +770,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 1.0.13;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
