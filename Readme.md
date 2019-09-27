@@ -41,7 +41,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
 use_frameworks!
 
-pod 'MLBootstrap', '~> 1.0.8'
+pod 'MLBootstrap', '~> 1.0.9'
 ```
 
 Then, run the following command:
@@ -67,7 +67,7 @@ $ brew install carthage
 To integrate MLBootstrap into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLBootstrap" ~> 1.0.8
+github "micheltlutz/MLBootstrap" ~> 1.0.9
 ```
 
 In Terminal using:
@@ -101,7 +101,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.0.8"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.0.9"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])
