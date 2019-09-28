@@ -5,10 +5,6 @@
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/MLBootstrap.svg)](https://cocoapods.org/pods/MLBootstrap)
-
-[![Travis](https://img.shields.io/travis/micheltlutz/MLBootstrap/master.svg)](https://travis-ci.org/micheltlutz/MLBootstrap/branches)
-[![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
 
 Bootstrap for swift apps
 
@@ -25,32 +21,6 @@ Bootstrap for swift apps
 ## Installation
 
 ### Dependency Managers
-<details>
-  <summary><strong>CocoaPods</strong></summary>
-
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
-To integrate MLBootstrap into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '11.0'
-use_frameworks!
-
-pod 'MLBootstrap', '~> 1.0.18'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
-
-</details>
 
 <details>
   <summary><strong>Carthage</strong></summary>
@@ -94,14 +64,14 @@ Like this:
 To use MLBootstrap as a [Swift Package Manager](https://swift.org/package-manager/) package just add the following in your Package.swift file.
 
 ``` swift
-// swift-tools-version:4.2
+// swift-tools-version:5.1
 
 import PackageDescription
 
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.0.18"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.1"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])

@@ -19,7 +19,7 @@ open class MLLabel: UILabel {
         self.text = text
         translatesAutoresizingMaskIntoConstraints = false
         textColor = .white
-        font = MLFonts.SFProDisplayLight.font(size: fontSize)
+        font = UIFont.systemFont(ofSize: fontSize, weight: .light)
         numberOfLines = 0
         textAlignment = .center
     }

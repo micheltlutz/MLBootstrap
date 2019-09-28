@@ -16,7 +16,7 @@ open class MLField: UITextField {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor.black.withAlphaComponent(0.3)
         textColor = .white
-        font = MLFonts.SFProDisplayLight.font(size: 20)
+        font = UIFont.systemFont(ofSize: 18, weight: .light)
         heightAnchor.constraint(equalToConstant: MLSizes.size(multiple: 5)).isActive = true
         layer.cornerRadius = MLSizes.size(multiple: 5) / 2
         let attr = [NSAttributedString.Key.foregroundColor: UIColor.lightGray]

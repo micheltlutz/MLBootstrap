@@ -47,14 +47,6 @@
 		D0A90668233EB5070074DC7A /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B621CFABA400662A11 /* SF-Pro-Text-RegularItalic.otf */; };
 		D0A90669233EB5070074DC7A /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B721CFABA400662A11 /* SF-Pro-Text-Semibold.otf */; };
 		D0A9066A233EB5070074DC7A /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B821CFABA400662A11 /* SF-Pro-Text-SemiboldItalic.otf */; };
-		D0A90672233EB7F90074DC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A90671233EB7F90074DC7A /* AppDelegate.swift */; };
-		D0A90676233EB7F90074DC7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A90675233EB7F90074DC7A /* ContentView.swift */; };
-		D0A90678233EB7FC0074DC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A90677233EB7FC0074DC7A /* Assets.xcassets */; };
-		D0A9067B233EB7FC0074DC7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A9067A233EB7FC0074DC7A /* Preview Assets.xcassets */; };
-		D0A9067E233EB7FC0074DC7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A9067C233EB7FC0074DC7A /* LaunchScreen.storyboard */; };
-		D0A90689233EB7FD0074DC7A /* MLBootStrapDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A90688233EB7FC0074DC7A /* MLBootStrapDemoTests.swift */; };
-		D0A90691233EB80B0074DC7A /* MLBootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* MLBootstrap.framework */; };
-		D0A90692233EB80B0074DC7A /* MLBootstrap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* MLBootstrap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */; };
 		D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */; };
 		D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */; };
@@ -68,7 +60,6 @@
 		D0F3819421CC68A500662A11 /* MLMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3819221CC68A500662A11 /* MLMath.swift */; };
 		D0F3819521CC68A500662A11 /* ClosureAttach.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3819321CC68A500662A11 /* ClosureAttach.swift */; };
 		D0F3819721CC697600662A11 /* UIControl+addAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3819621CC697600662A11 /* UIControl+addAction.swift */; };
-		D0F3823221CFAC4500662A11 /* MLFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3823121CFAC4500662A11 /* MLFonts.swift */; };
 		D0F3823721CFAE6B00662A11 /* MLSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3823621CFAE6B00662A11 /* MLSizes.swift */; };
 		D0F3823D21CFB34700662A11 /* MLViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */; };
 		D0F3824321CFB54300662A11 /* UIView+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3824221CFB54300662A11 /* UIView+constraint.swift */; };
@@ -88,20 +79,6 @@
 			remoteGlobalIDString = 3549BB201DA389CD00C63030;
 			remoteInfo = "MLBootstrap-iOS";
 		};
-		D0A90685233EB7FC0074DC7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0A9066E233EB7F90074DC7A;
-			remoteInfo = MLBootStrapDemo;
-		};
-		D0A90693233EB80B0074DC7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "MLBootstrap-iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -111,17 +88,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0A90695233EB80C0074DC7A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D0A90692233EB80B0074DC7A /* MLBootstrap.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,16 +110,6 @@
 		D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+HTML.swift"; sourceTree = "<group>"; };
 		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
 		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
-		D0A9066F233EB7F90074DC7A /* MLBootStrapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBootStrapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A90671233EB7F90074DC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0A90675233EB7F90074DC7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D0A90677233EB7FC0074DC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0A9067A233EB7FC0074DC7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D0A9067D233EB7FC0074DC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D0A9067F233EB7FC0074DC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0A90684233EB7FC0074DC7A /* MLBootStrapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBootStrapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A90688233EB7FC0074DC7A /* MLBootStrapDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBootStrapDemoTests.swift; sourceTree = "<group>"; };
-		D0A9068A233EB7FD0074DC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeUtils.swift; sourceTree = "<group>"; };
 		D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevUtils.swift; sourceTree = "<group>"; };
@@ -197,7 +153,6 @@
 		D0F381B621CFABA400662A11 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		D0F381B721CFABA400662A11 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		D0F381B821CFABA400662A11 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
-		D0F3823121CFAC4500662A11 /* MLFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLFonts.swift; sourceTree = "<group>"; };
 		D0F3823621CFAE6B00662A11 /* MLSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSizes.swift; sourceTree = "<group>"; };
 		D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLViewConfiguration.swift; sourceTree = "<group>"; };
 		D0F3824221CFB54300662A11 /* UIView+constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+constraint.swift"; sourceTree = "<group>"; };
@@ -225,21 +180,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0A9066C233EB7F90074DC7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0A90691233EB80B0074DC7A /* MLBootstrap.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0A90681233EB7FC0074DC7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -249,8 +189,6 @@
 				D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */,
 				3549BB161DA3890B00C63030 /* Sources */,
 				3549BB191DA3890B00C63030 /* Tests */,
-				D0A90670233EB7F90074DC7A /* MLBootStrapDemo */,
-				D0A90687233EB7FC0074DC7A /* MLBootStrapDemoTests */,
 				3549BB061DA387DB00C63030 /* Products */,
 				357D954B1DA3F2B400AEC55F /* Frameworks */,
 			);
@@ -261,8 +199,6 @@
 			children = (
 				3549BB211DA389CD00C63030 /* MLBootstrap.framework */,
 				3549BB611DA38ADB00C63030 /* MLBootstrapTests-iOS.xctest */,
-				D0A9066F233EB7F90074DC7A /* MLBootStrapDemo.app */,
-				D0A90684233EB7FC0074DC7A /* MLBootStrapDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -334,36 +270,6 @@
 			path = Formatter;
 			sourceTree = "<group>";
 		};
-		D0A90670233EB7F90074DC7A /* MLBootStrapDemo */ = {
-			isa = PBXGroup;
-			children = (
-				D0A90671233EB7F90074DC7A /* AppDelegate.swift */,
-				D0A90675233EB7F90074DC7A /* ContentView.swift */,
-				D0A90677233EB7FC0074DC7A /* Assets.xcassets */,
-				D0A9067C233EB7FC0074DC7A /* LaunchScreen.storyboard */,
-				D0A9067F233EB7FC0074DC7A /* Info.plist */,
-				D0A90679233EB7FC0074DC7A /* Preview Content */,
-			);
-			path = MLBootStrapDemo;
-			sourceTree = "<group>";
-		};
-		D0A90679233EB7FC0074DC7A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D0A9067A233EB7FC0074DC7A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D0A90687233EB7FC0074DC7A /* MLBootStrapDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				D0A90688233EB7FC0074DC7A /* MLBootStrapDemoTests.swift */,
-				D0A9068A233EB7FD0074DC7A /* Info.plist */,
-			);
-			path = MLBootStrapDemoTests;
-			sourceTree = "<group>";
-		};
 		D0F3819021CC682300662A11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,7 +299,6 @@
 			children = (
 				D0F3818A21CC652100662A11 /* MLBootstrapSkin.swift */,
 				D0F3818C21CC67B700662A11 /* MLColorPallet.swift */,
-				D0F3823121CFAC4500662A11 /* MLFonts.swift */,
 				D0B862EE22FA70F3002E9FB4 /* MLImages.swift */,
 				D0F3823621CFAE6B00662A11 /* MLSizes.swift */,
 			);
@@ -539,43 +444,6 @@
 			productReference = 3549BB611DA38ADB00C63030 /* MLBootstrapTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D0A9066E233EB7F90074DC7A /* MLBootStrapDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0A9068B233EB7FD0074DC7A /* Build configuration list for PBXNativeTarget "MLBootStrapDemo" */;
-			buildPhases = (
-				D0A9066B233EB7F90074DC7A /* Sources */,
-				D0A9066C233EB7F90074DC7A /* Frameworks */,
-				D0A9066D233EB7F90074DC7A /* Resources */,
-				D0A90695233EB80C0074DC7A /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D0A90694233EB80B0074DC7A /* PBXTargetDependency */,
-			);
-			name = MLBootStrapDemo;
-			productName = MLBootStrapDemo;
-			productReference = D0A9066F233EB7F90074DC7A /* MLBootStrapDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		D0A90683233EB7FC0074DC7A /* MLBootStrapDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0A9068E233EB7FD0074DC7A /* Build configuration list for PBXNativeTarget "MLBootStrapDemoTests" */;
-			buildPhases = (
-				D0A90680233EB7FC0074DC7A /* Sources */,
-				D0A90681233EB7FC0074DC7A /* Frameworks */,
-				D0A90682233EB7FC0074DC7A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D0A90686233EB7FC0074DC7A /* PBXTargetDependency */,
-			);
-			name = MLBootStrapDemoTests;
-			productName = MLBootStrapDemoTests;
-			productReference = D0A90684233EB7FC0074DC7A /* MLBootStrapDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -596,17 +464,6 @@
 						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
-					D0A9066E233EB7F90074DC7A = {
-						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = 25RYDD756Z;
-						ProvisioningStyle = Automatic;
-					};
-					D0A90683233EB7FC0074DC7A = {
-						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = 25RYDD756Z;
-						ProvisioningStyle = Automatic;
-						TestTargetID = D0A9066E233EB7F90074DC7A;
-					};
 				};
 			};
 			buildConfigurationList = 3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "MLBootstrap" */;
@@ -624,8 +481,6 @@
 			targets = (
 				3549BB201DA389CD00C63030 /* MLBootstrap-iOS */,
 				3549BB601DA38ADB00C63030 /* MLBootstrapTests-iOS */,
-				D0A9066E233EB7F90074DC7A /* MLBootStrapDemo */,
-				D0A90683233EB7FC0074DC7A /* MLBootStrapDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -669,23 +524,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3549BB5F1DA38ADB00C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0A9066D233EB7F90074DC7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0A9067E233EB7FC0074DC7A /* LaunchScreen.storyboard in Resources */,
-				D0A9067B233EB7FC0074DC7A /* Preview Assets.xcassets in Resources */,
-				D0A90678233EB7FC0074DC7A /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0A90682233EB7FC0074DC7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -743,7 +581,6 @@
 				D0F3818B21CC652100662A11 /* MLBootstrapSkin.swift in Sources */,
 				359649031FB18CC000FC7ADC /* MLBootstrap.swift in Sources */,
 				D0F3818521CC5DB100662A11 /* MLLabel.swift in Sources */,
-				D0F3823221CFAC4500662A11 /* MLFonts.swift in Sources */,
 				D0F3819421CC68A500662A11 /* MLMath.swift in Sources */,
 				D0F3826121CFB5B400662A11 /* String+Character.swift in Sources */,
 				D01FD2522339AA2200B8BBD6 /* GeneralFormatter.swift in Sources */,
@@ -761,23 +598,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0A9066B233EB7F90074DC7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0A90672233EB7F90074DC7A /* AppDelegate.swift in Sources */,
-				D0A90676233EB7F90074DC7A /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0A90680233EB7FC0074DC7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0A90689233EB7FD0074DC7A /* MLBootStrapDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -786,28 +606,7 @@
 			target = 3549BB201DA389CD00C63030 /* MLBootstrap-iOS */;
 			targetProxy = 3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */;
 		};
-		D0A90686233EB7FC0074DC7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0A9066E233EB7F90074DC7A /* MLBootStrapDemo */;
-			targetProxy = D0A90685233EB7FC0074DC7A /* PBXContainerItemProxy */;
-		};
-		D0A90694233EB80B0074DC7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3549BB201DA389CD00C63030 /* MLBootstrap-iOS */;
-			targetProxy = D0A90693233EB80B0074DC7A /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D0A9067C233EB7FC0074DC7A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0A9067D233EB7FC0074DC7A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3549BB0B1DA387DB00C63030 /* Debug */ = {
@@ -944,7 +743,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.18;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -967,7 +766,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.18;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -1011,104 +810,6 @@
 			};
 			name = Release;
 		};
-		D0A9068C233EB7FD0074DC7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MLBootStrapDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 25RYDD756Z;
-				ENABLE_PREVIEWS = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MLBootStrapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootStrapDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D0A9068D233EB7FD0074DC7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MLBootStrapDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 25RYDD756Z;
-				ENABLE_PREVIEWS = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MLBootStrapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootStrapDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D0A9068F233EB7FD0074DC7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25RYDD756Z;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MLBootStrapDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootStrapDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBootStrapDemo.app/MLBootStrapDemo";
-			};
-			name = Debug;
-		};
-		D0A90690233EB7FD0074DC7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25RYDD756Z;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MLBootStrapDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootStrapDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBootStrapDemo.app/MLBootStrapDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1135,24 +836,6 @@
 			buildConfigurations = (
 				3549BB6A1DA38ADB00C63030 /* Debug */,
 				3549BB6B1DA38ADB00C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0A9068B233EB7FD0074DC7A /* Build configuration list for PBXNativeTarget "MLBootStrapDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0A9068C233EB7FD0074DC7A /* Debug */,
-				D0A9068D233EB7FD0074DC7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0A9068E233EB7FD0074DC7A /* Build configuration list for PBXNativeTarget "MLBootStrapDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0A9068F233EB7FD0074DC7A /* Debug */,
-				D0A90690233EB7FD0074DC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

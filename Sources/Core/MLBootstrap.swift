@@ -17,7 +17,5 @@ open class MLBootstrap {
         return version
     }()
 
-    public static func configure() {
-        MLFontManager.loadAllFonts()
-    }
+    public static func configure() {}
 }
