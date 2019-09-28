@@ -23,11 +23,12 @@ let package = Package(
     targets: [
         .target(
             name: "MLBootstrap",
-            dependencies: []),
+            dependencies: [],
+            path: "Tests"),
         .testTarget(
             name: "MLBootstrapTests",
             dependencies: ["MLBootstrap"],
-            path: "Tests")
+            path: "Sources")
     ],
     swiftLanguageVersions: [.v5]
 )
