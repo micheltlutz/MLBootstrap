@@ -9,19 +9,19 @@
 import UIKit
 
 public enum GeneralFormatter {
-    //    case cpf
+    case cpf
     case phone
-    //    case cnpj
+    case cnpj
     case custom(formatter: CustomFormatter)
 
     public var formatter: CustomFormatter {
         switch self {
-            //        case .cpf:
-        //            return CPFFormatter()
+        case .cpf:
+            return CPFFormatter()
         case .phone:
             return PhoneFormatter()
-            //        case .cnpj:
-        //            return CNPJFormatter()
+        case .cnpj:
+            return CNPJFormatter()
         case .custom(let formatter):
             return formatter
         }

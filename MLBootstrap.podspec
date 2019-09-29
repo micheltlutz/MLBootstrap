@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'MLBootstrap'
- s.version = '1.1'
+ s.version = '1.2.0'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'Bootstrap for swift apps'
  s.homepage = 'http://micheltlutz.me'
