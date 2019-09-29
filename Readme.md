@@ -37,7 +37,7 @@ $ brew install carthage
 To integrate MLBootstrap into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLBootstrap" ~> 1.3.0
+github "micheltlutz/MLBootstrap" ~> 1.4.0
 ```
 
 In Terminal using:
@@ -71,7 +71,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.3.0"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.4.0"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])
@@ -188,7 +188,6 @@ final class MyViewController: UIViewController {
 
 }
 
-
 extension MyViewController: MLViewConfiguration {
 	setupConstraints() {
 	let defaultWidth = MLSizes.screenWidth() * 0.8
@@ -209,12 +208,26 @@ extension MyViewController: MLViewConfiguration {
 }
 ```
 
+### MLDatePickerField
+
+```swift
+
+ private let fieldBirth: MLDatePickerField = {
+        let fieldBirth = MLDatePickerField(placeHolder: "Your Brithday")
+        fieldBirth.backgroundColor = .white
+        fieldBirth.textColor = MLColorPallet.darkGrey.color
+        fieldBirth.layer.borderWidth = 1.0
+        fieldBirth.layer.borderColor = MLColorPallet.orange.cgColor
+        return fieldBirth
+    }()
+
+```
+
 ### String Utils
 
 * dd/MM/YYYY to YYYY-MM-dd and YYYY-MM-dd to dd/MM/YYYY
 
 ```swift
-
 
 //Params separator: Character = "/", newSeparator: Character = "-"
 public var dateFormmater = "13/01/1988".dmyToymd() // Output: "1988-01-13"
