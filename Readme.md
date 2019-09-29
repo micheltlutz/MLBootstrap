@@ -223,6 +223,24 @@ extension MyViewController: MLViewConfiguration {
 
 ```
 
+### MLPickerField
+
+```swift
+                   
+ private let genrePicker: MLPickerField = {
+			let options = [(key: "female", value: "Female"), 
+							  (key: "male", value: "Male")]
+
+        let genrePicker = MLPickerField(placeHolder: i18n.RegisterFlow.genre.text, options: options)
+        genrePicker.backgroundColor = .white
+        genrePicker.textColor = MLColorPallet.darkGrey.color
+        genrePicker.layer.borderWidth = 1.0
+        genrePicker.layer.borderColor = MLColorPallet.orange.cgColor
+        return genrePicker
+    }()
+
+```
+
 ### String Utils
 
 * dd/MM/YYYY to YYYY-MM-dd and YYYY-MM-dd to dd/MM/YYYY

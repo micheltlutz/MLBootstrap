@@ -12,14 +12,14 @@ extension String {
     /**
         Inverse String Date from dd/MM/YYYY to YYYY/MM/dd
      */
-    func dmyToymd(separator: Character = "/", newSeparator: Character = "-") -> String {
+    public func dmyToymd(separator: Character = "/", newSeparator: Character = "-") -> String {
         let splitString = self.split(separator: separator)
         return "\(splitString[2])\(newSeparator)\(splitString[1])\(newSeparator)\(splitString[0])"
     }
     /**
        Inverse String Date from YYYY-MM-dd to dd/MM/YYYY
     */
-    func ymdTodmy(separator: Character = "-", newSeparator: Character = "/") -> String {
+    public func ymdTodmy(separator: Character = "-", newSeparator: Character = "/") -> String {
         let splitString = self.split(separator: separator)
         return "\(splitString[2])\(newSeparator)\(splitString[1])\(newSeparator)\(splitString[0])"
     }
