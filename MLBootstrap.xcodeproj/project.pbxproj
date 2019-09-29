@@ -55,6 +55,7 @@
 		D0B3AB81234142A900BF4489 /* String+InverseDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB80234142A900BF4489 /* String+InverseDate.swift */; };
 		D0B3AB862341436E00BF4489 /* StringExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB852341436E00BF4489 /* StringExtensionsTest.swift */; };
 		D0B3AB88234148C100BF4489 /* MLDatePickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB87234148C100BF4489 /* MLDatePickerField.swift */; };
+		D0B3AB8B2341583400BF4489 /* MLPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB8A2341583400BF4489 /* MLPickerField.swift */; };
 		D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */; };
 		D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */; };
 		D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */; };
@@ -126,6 +127,7 @@
 		D0B3AB80234142A900BF4489 /* String+InverseDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+InverseDate.swift"; sourceTree = "<group>"; };
 		D0B3AB852341436E00BF4489 /* StringExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTest.swift; sourceTree = "<group>"; };
 		D0B3AB87234148C100BF4489 /* MLDatePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLDatePickerField.swift; sourceTree = "<group>"; };
+		D0B3AB8A2341583400BF4489 /* MLPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLPickerField.swift; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeUtils.swift; sourceTree = "<group>"; };
 		D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevUtils.swift; sourceTree = "<group>"; };
@@ -376,11 +378,12 @@
 			isa = PBXGroup;
 			children = (
 				D0F3818621CC5F7300662A11 /* MLButton.swift */,
+				D0B3AB87234148C100BF4489 /* MLDatePickerField.swift */,
 				D0F3818821CC60BB00662A11 /* MLField.swift */,
 				D0F3818421CC5DB100662A11 /* MLLabel.swift */,
+				D0B3AB8A2341583400BF4489 /* MLPickerField.swift */,
 				D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */,
 				D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */,
-				D0B3AB87234148C100BF4489 /* MLDatePickerField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -397,13 +400,13 @@
 		D0F3826521CFB5BF00662A11 /* String */ = {
 			isa = PBXGroup;
 			children = (
-				D0F3825B21CFB5AC00662A11 /* String+toCamelCase.swift */,
-				D0F3824C21CFB57E00662A11 /* String+heightWithConstrainedWidth.swift */,
-				D0F3825621CFB5A300662A11 /* String+Extensions.swift */,
-				D0F3826021CFB5B400662A11 /* String+Character.swift */,
-				D034836F233D929200A1577F /* String+SimpleHTML.swift */,
 				D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */,
+				D0F3826021CFB5B400662A11 /* String+Character.swift */,
+				D0F3825621CFB5A300662A11 /* String+Extensions.swift */,
+				D0F3824C21CFB57E00662A11 /* String+heightWithConstrainedWidth.swift */,
 				D0B3AB80234142A900BF4489 /* String+InverseDate.swift */,
+				D034836F233D929200A1577F /* String+SimpleHTML.swift */,
+				D0F3825B21CFB5AC00662A11 /* String+toCamelCase.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				D0B862EF22FA70F3002E9FB4 /* MLImages.swift in Sources */,
 				D01FD2542339AA5100B8BBD6 /* PhoneFormatter.swift in Sources */,
 				D0F3818F21CC681A00662A11 /* UIColor+Hex.swift in Sources */,
+				D0B3AB8B2341583400BF4489 /* MLPickerField.swift in Sources */,
 				D0F3824321CFB54300662A11 /* UIView+constraint.swift in Sources */,
 				D0F3819721CC697600662A11 /* UIControl+addAction.swift in Sources */,
 				D0F3824D21CFB57E00662A11 /* String+heightWithConstrainedWidth.swift in Sources */,
@@ -775,7 +779,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -798,7 +802,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
