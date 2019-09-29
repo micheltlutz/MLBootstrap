@@ -52,6 +52,8 @@
 		D0B3AB6223402CA300BF4489 /* CPFFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB6123402CA300BF4489 /* CPFFormatter.swift */; };
 		D0B3AB6423402CC700BF4489 /* CNPJFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB6323402CC700BF4489 /* CNPJFormatter.swift */; };
 		D0B3AB6623402CE700BF4489 /* BirthdayFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB6523402CE700BF4489 /* BirthdayFormatter.swift */; };
+		D0B3AB81234142A900BF4489 /* String+InverseDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB80234142A900BF4489 /* String+InverseDate.swift */; };
+		D0B3AB862341436E00BF4489 /* StringExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB852341436E00BF4489 /* StringExtensionsTest.swift */; };
 		D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */; };
 		D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */; };
 		D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */; };
@@ -120,6 +122,8 @@
 		D0B3AB6123402CA300BF4489 /* CPFFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFFormatter.swift; sourceTree = "<group>"; };
 		D0B3AB6323402CC700BF4489 /* CNPJFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNPJFormatter.swift; sourceTree = "<group>"; };
 		D0B3AB6523402CE700BF4489 /* BirthdayFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayFormatter.swift; sourceTree = "<group>"; };
+		D0B3AB80234142A900BF4489 /* String+InverseDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+InverseDate.swift"; sourceTree = "<group>"; };
+		D0B3AB852341436E00BF4489 /* StringExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTest.swift; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeUtils.swift; sourceTree = "<group>"; };
 		D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevUtils.swift; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 			children = (
 				3549BB8A1DA38C0A00C63030 /* MLBootstrapSpec.swift */,
 				3549BB5B1DA38A8C00C63030 /* Supporting Files */,
+				D0B3AB852341436E00BF4489 /* StringExtensionsTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 				D0F3826021CFB5B400662A11 /* String+Character.swift */,
 				D034836F233D929200A1577F /* String+SimpleHTML.swift */,
 				D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */,
+				D0B3AB80234142A900BF4489 /* String+InverseDate.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -577,6 +583,7 @@
 				D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */,
 				D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */,
 				D0B3AB6623402CE700BF4489 /* BirthdayFormatter.swift in Sources */,
+				D0B3AB81234142A900BF4489 /* String+InverseDate.swift in Sources */,
 				D0B3AB6023402C7800BF4489 /* NoRuleFormatter.swift in Sources */,
 				D0B3AB5E23402BB500BF4489 /* ZipCodeFormatter.swift in Sources */,
 				D0348372233D93F600A1577F /* NSMutableAttributedString+HTML.swift in Sources */,
@@ -614,6 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B3AB862341436E00BF4489 /* StringExtensionsTest.swift in Sources */,
 				3549BB8B1DA38C0A00C63030 /* MLBootstrapSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,7 +771,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -786,7 +794,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;

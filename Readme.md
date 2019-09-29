@@ -37,7 +37,7 @@ $ brew install carthage
 To integrate MLBootstrap into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLBootstrap" ~> 1.2.0
+github "micheltlutz/MLBootstrap" ~> 1.3.0
 ```
 
 In Terminal using:
@@ -71,7 +71,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.2.0"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.3.0"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])
@@ -208,6 +208,23 @@ extension MyViewController: MLViewConfiguration {
     }
 }
 ```
+
+### String Utils
+
+* dd/MM/YYYY to YYYY-MM-dd and YYYY-MM-dd to dd/MM/YYYY
+
+```swift
+
+
+//Params separator: Character = "/", newSeparator: Character = "-"
+public var dateFormmater = "13/01/1988".dmyToymd() // Output: "1988-01-13"
+
+//Params separator: Character = "-", newSeparator: Character = "/")
+public var dateDbFormmater = "1988-01-13".ymdTodmy() // Output: "13/01/1988"
+
+
+```
+
 
 ## Contributing
 
