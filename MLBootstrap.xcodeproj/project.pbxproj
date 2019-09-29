@@ -47,6 +47,11 @@
 		D0A90668233EB5070074DC7A /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B621CFABA400662A11 /* SF-Pro-Text-RegularItalic.otf */; };
 		D0A90669233EB5070074DC7A /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B721CFABA400662A11 /* SF-Pro-Text-Semibold.otf */; };
 		D0A9066A233EB5070074DC7A /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F381B821CFABA400662A11 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		D0B3AB5E23402BB500BF4489 /* ZipCodeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB5D23402BB500BF4489 /* ZipCodeFormatter.swift */; };
+		D0B3AB6023402C7800BF4489 /* NoRuleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB5F23402C7800BF4489 /* NoRuleFormatter.swift */; };
+		D0B3AB6223402CA300BF4489 /* CPFFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB6123402CA300BF4489 /* CPFFormatter.swift */; };
+		D0B3AB6423402CC700BF4489 /* CNPJFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB6323402CC700BF4489 /* CNPJFormatter.swift */; };
+		D0B3AB6623402CE700BF4489 /* BirthdayFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB6523402CE700BF4489 /* BirthdayFormatter.swift */; };
 		D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */; };
 		D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */; };
 		D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */; };
@@ -110,6 +115,11 @@
 		D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+HTML.swift"; sourceTree = "<group>"; };
 		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
 		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
+		D0B3AB5D23402BB500BF4489 /* ZipCodeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeFormatter.swift; sourceTree = "<group>"; };
+		D0B3AB5F23402C7800BF4489 /* NoRuleFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRuleFormatter.swift; sourceTree = "<group>"; };
+		D0B3AB6123402CA300BF4489 /* CPFFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFFormatter.swift; sourceTree = "<group>"; };
+		D0B3AB6323402CC700BF4489 /* CNPJFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNPJFormatter.swift; sourceTree = "<group>"; };
+		D0B3AB6523402CE700BF4489 /* BirthdayFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayFormatter.swift; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeUtils.swift; sourceTree = "<group>"; };
 		D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevUtils.swift; sourceTree = "<group>"; };
@@ -266,6 +276,11 @@
 				D01FD24F2339A9E800B8BBD6 /* CustomFormatter.swift */,
 				D01FD2512339AA2200B8BBD6 /* GeneralFormatter.swift */,
 				D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */,
+				D0B3AB5D23402BB500BF4489 /* ZipCodeFormatter.swift */,
+				D0B3AB5F23402C7800BF4489 /* NoRuleFormatter.swift */,
+				D0B3AB6123402CA300BF4489 /* CPFFormatter.swift */,
+				D0B3AB6323402CC700BF4489 /* CNPJFormatter.swift */,
+				D0B3AB6523402CE700BF4489 /* BirthdayFormatter.swift */,
 			);
 			path = Formatter;
 			sourceTree = "<group>";
@@ -561,6 +576,9 @@
 				D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */,
 				D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */,
 				D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */,
+				D0B3AB6623402CE700BF4489 /* BirthdayFormatter.swift in Sources */,
+				D0B3AB6023402C7800BF4489 /* NoRuleFormatter.swift in Sources */,
+				D0B3AB5E23402BB500BF4489 /* ZipCodeFormatter.swift in Sources */,
 				D0348372233D93F600A1577F /* NSMutableAttributedString+HTML.swift in Sources */,
 				D0348370233D929200A1577F /* String+SimpleHTML.swift in Sources */,
 				D01FD2502339A9E800B8BBD6 /* CustomFormatter.swift in Sources */,
@@ -571,6 +589,7 @@
 				D0F3819721CC697600662A11 /* UIControl+addAction.swift in Sources */,
 				D0F3824D21CFB57E00662A11 /* String+heightWithConstrainedWidth.swift in Sources */,
 				D0F3825721CFB5A300662A11 /* String+Extensions.swift in Sources */,
+				D0B3AB6423402CC700BF4489 /* CNPJFormatter.swift in Sources */,
 				D0F3823D21CFB34700662A11 /* MLViewConfiguration.swift in Sources */,
 				D09102FC2308BE5800EC5D45 /* MLSimpleButton.swift in Sources */,
 				D0F3818D21CC67B700662A11 /* MLColorPallet.swift in Sources */,
@@ -582,6 +601,7 @@
 				359649031FB18CC000FC7ADC /* MLBootstrap.swift in Sources */,
 				D0F3818521CC5DB100662A11 /* MLLabel.swift in Sources */,
 				D0F3819421CC68A500662A11 /* MLMath.swift in Sources */,
+				D0B3AB6223402CA300BF4489 /* CPFFormatter.swift in Sources */,
 				D0F3826121CFB5B400662A11 /* String+Character.swift in Sources */,
 				D01FD2522339AA2200B8BBD6 /* GeneralFormatter.swift in Sources */,
 				D0F3819521CC68A500662A11 /* ClosureAttach.swift in Sources */,
