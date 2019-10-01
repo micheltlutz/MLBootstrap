@@ -56,6 +56,8 @@
 		D0B3AB862341436E00BF4489 /* StringExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB852341436E00BF4489 /* StringExtensionsTest.swift */; };
 		D0B3AB88234148C100BF4489 /* MLDatePickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB87234148C100BF4489 /* MLDatePickerField.swift */; };
 		D0B3AB8B2341583400BF4489 /* MLPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB8A2341583400BF4489 /* MLPickerField.swift */; };
+		D0B3ABA12342CEDF00BF4489 /* MLQuestionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3ABA02342CEDF00BF4489 /* MLQuestionCheck.swift */; };
+		D0B3ABA32342CF0100BF4489 /* MLQuestionCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3ABA22342CF0100BF4489 /* MLQuestionCheckButton.swift */; };
 		D0B862E922FA6FDA002E9FB4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */; };
 		D0B862EB22FA7063002E9FB4 /* RuntimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */; };
 		D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */; };
@@ -128,6 +130,8 @@
 		D0B3AB852341436E00BF4489 /* StringExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTest.swift; sourceTree = "<group>"; };
 		D0B3AB87234148C100BF4489 /* MLDatePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLDatePickerField.swift; sourceTree = "<group>"; };
 		D0B3AB8A2341583400BF4489 /* MLPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLPickerField.swift; sourceTree = "<group>"; };
+		D0B3ABA02342CEDF00BF4489 /* MLQuestionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLQuestionCheck.swift; sourceTree = "<group>"; };
+		D0B3ABA22342CF0100BF4489 /* MLQuestionCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLQuestionCheckButton.swift; sourceTree = "<group>"; };
 		D0B862E822FA6FDA002E9FB4 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		D0B862EA22FA7063002E9FB4 /* RuntimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeUtils.swift; sourceTree = "<group>"; };
 		D0B862EC22FA70B9002E9FB4 /* DevUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevUtils.swift; sourceTree = "<group>"; };
@@ -294,6 +298,15 @@
 			path = Formatter;
 			sourceTree = "<group>";
 		};
+		D0B3AB9F2342CEC300BF4489 /* MLQuestionCheck */ = {
+			isa = PBXGroup;
+			children = (
+				D0B3ABA02342CEDF00BF4489 /* MLQuestionCheck.swift */,
+				D0B3ABA22342CF0100BF4489 /* MLQuestionCheckButton.swift */,
+			);
+			path = MLQuestionCheck;
+			sourceTree = "<group>";
+		};
 		D0F3819021CC682300662A11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +390,7 @@
 		D0F3823B21CFB1ED00662A11 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D0B3AB9F2342CEC300BF4489 /* MLQuestionCheck */,
 				D0F3818621CC5F7300662A11 /* MLButton.swift */,
 				D0B3AB87234148C100BF4489 /* MLDatePickerField.swift */,
 				D0F3818821CC60BB00662A11 /* MLField.swift */,
@@ -612,8 +626,10 @@
 				D0F3818921CC60BB00662A11 /* MLField.swift in Sources */,
 				D0F3824821CFB55300662A11 /* AutoLayout+Extensions.swift in Sources */,
 				D0F3818B21CC652100662A11 /* MLBootstrapSkin.swift in Sources */,
+				D0B3ABA12342CEDF00BF4489 /* MLQuestionCheck.swift in Sources */,
 				359649031FB18CC000FC7ADC /* MLBootstrap.swift in Sources */,
 				D0B3AB88234148C100BF4489 /* MLDatePickerField.swift in Sources */,
+				D0B3ABA32342CF0100BF4489 /* MLQuestionCheckButton.swift in Sources */,
 				D0F3818521CC5DB100662A11 /* MLLabel.swift in Sources */,
 				D0F3819421CC68A500662A11 /* MLMath.swift in Sources */,
 				D0B3AB6223402CA300BF4489 /* CPFFormatter.swift in Sources */,
@@ -779,7 +795,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.5.0;
+				MARKETING_VERSION = 1.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -802,7 +818,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.5.0;
+				MARKETING_VERSION = 1.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;

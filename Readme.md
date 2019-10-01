@@ -37,7 +37,7 @@ $ brew install carthage
 To integrate MLBootstrap into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLBootstrap" ~> 1.4.0
+github "micheltlutz/MLBootstrap" ~> 1.6.0
 ```
 
 In Terminal using:
@@ -71,7 +71,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.4.0"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.6.0"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])
@@ -239,6 +239,46 @@ extension MyViewController: MLViewConfiguration {
         return genrePicker
     }()
 
+```
+
+### MLQuestionCheck
+
+### You need two image files with named in your Assets 
+
+- questionUnchecked
+- questionChecked
+
+```swift
+import MLQuestionCheck
+
+let question1 = MLQuestionCheck(question: "You are ok?")
+question1.didChangeState = { checked in
+    print("question1 checked? \(checked)")
+}
+
+```
+
+### You can Change the image name 
+```swift
+question1.uncheckedImageName = "new image name"
+question1.checkedImageName = "new image name"
+question1.setupCheck() // to change configuration buttons
+
+```
+### Or Custom Font width and Runtime Change Text
+
+```swift
+let questionCheckCustom = MLQuestionCheck(question: "I'm iOS Developer?")
+questionCheckCustom.widthQuestion = UIScreen.main.bounds.width
+questionCheckCustom.font = UIFont.boldSystemFont(ofSize: 17)
+questionCheckCustom.fontChecked = UIFont.boldSystemFont(ofSize: 20)
+questionCheckCustom.didChangeState = { isChecked in
+	print("questionCheck.isChecked: \(isChecked)")
+}
+
+Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (_) in
+	self.questionCheckCustom.question = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+}
 ```
 
 ### String Utils
