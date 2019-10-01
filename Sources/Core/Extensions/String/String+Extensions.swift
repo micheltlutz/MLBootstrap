@@ -6,7 +6,7 @@
 //  Copyright © 2018 Codigo da Mente Edicao E Comercio De Livros E Testes. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     public func capitalizingFirstLetter() -> String {
@@ -99,5 +99,17 @@ extension String {
 
     public mutating func trimmedTrailingSpaces() {
         self = self.trimmingTrailingSpaces()
+    }
+
+    /**
+     String Extension: This function calculate the height of a  label based on width and font
+     */
+    public func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect,
+                                            options: [.usesLineFragmentOrigin, .usesFontLeading],
+                                            attributes: [NSAttributedString.Key.font: font],
+                                            context: nil)
+        return ceil(boundingBox.height)
     }
 }
