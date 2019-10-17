@@ -18,6 +18,15 @@ public struct DateUtils {
         return formatter
     }()
 
+    public static let formatterPOSIX: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+       return formatter
+    }()
+
     public static func dateNow(with dateFormat: String) -> String {
         let date = Date()
         let formatter = DateUtils.formatter
@@ -103,6 +112,10 @@ public struct DateUtils {
         guard let newDate = formatter.date(from: stringDate) else { return nil }
         let newFormatter = DateUtils.monthYear(date: newDate)
         return newFormatter
+    }
+
+    public static func dateISO(from date: Date) -> String? {
+        return DateUtils.formatterPOSIX.string(from: date)
     }
 
     public static func date(from stringDate: String) -> Date {
