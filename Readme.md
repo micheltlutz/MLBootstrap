@@ -1,7 +1,7 @@
 # MLBootstrap
 
 [![Platforms](https://img.shields.io/cocoapods/p/MLBootstrap.svg)](https://cocoapods.org/pods/MLBootstrap)
-[![License](https://img.shields.io/cocoapods/l/MLBootstrap.svg)](https://raw.githubusercontent.com/micheltlutz/MLBootstrap/develop/LICENSE)
+[![License](https://img.shields.io/github/license/micheltlutz/MLBootstrap)](https://raw.githubusercontent.com/micheltlutz/MLBootstrap/develop/LICENSE)
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
