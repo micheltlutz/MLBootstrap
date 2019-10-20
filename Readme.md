@@ -6,7 +6,7 @@
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![codebeat badge](https://codebeat.co/badges/c7ebffe7-0feb-44f0-8c4f-b7d0ce18ef0e)](https://codebeat.co/projects/github-com-micheltlutz-mlbootstrap-develop)
-
+[![codecov](https://codecov.io/gh/micheltlutz/MLBootstrap/branch/develop/graph/badge.svg)](https://codecov.io/gh/micheltlutz/MLBootstrap)
 
 Bootstrap for swift apps
 
