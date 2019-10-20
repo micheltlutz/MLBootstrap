@@ -61,6 +61,10 @@ extension String {
         return String(self.filter { possibleCharacters.contains($0) })
     }
 
+    public func removeOccurrences(with pattern: String =  "[^a-zA-Z1-9]") -> String {
+        return self.replacingOccurrences(of: pattern, with: "", options: .regularExpression)
+    }
+
     public func removeDDI() -> String {
         let phone = self
         if phone.count == 13 {
