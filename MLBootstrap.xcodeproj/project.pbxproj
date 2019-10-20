@@ -14,6 +14,9 @@
 		D01FD2502339A9E800B8BBD6 /* CustomFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FD24F2339A9E800B8BBD6 /* CustomFormatter.swift */; };
 		D01FD2522339AA2200B8BBD6 /* GeneralFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FD2512339AA2200B8BBD6 /* GeneralFormatter.swift */; };
 		D01FD2542339AA5100B8BBD6 /* PhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */; };
+		D023A908235CA12C00C5A2F3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023A907235CA12C00C5A2F3 /* Date+Extension.swift */; };
+		D023A90A235CA18E00C5A2F3 /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023A909235CA18E00C5A2F3 /* Formatter+Extension.swift */; };
+		D023A90C235CA23500C5A2F3 /* JSON+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023A90B235CA23500C5A2F3 /* JSON+Extension.swift */; };
 		D0348370233D929200A1577F /* String+SimpleHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034836F233D929200A1577F /* String+SimpleHTML.swift */; };
 		D0348372233D93F600A1577F /* NSMutableAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */; };
 		D09102FC2308BE5800EC5D45 /* MLSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */; };
@@ -117,6 +120,9 @@
 		D01FD24F2339A9E800B8BBD6 /* CustomFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormatter.swift; sourceTree = "<group>"; };
 		D01FD2512339AA2200B8BBD6 /* GeneralFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFormatter.swift; sourceTree = "<group>"; };
 		D01FD2532339AA5100B8BBD6 /* PhoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
+		D023A907235CA12C00C5A2F3 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D023A909235CA18E00C5A2F3 /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
+		D023A90B235CA23500C5A2F3 /* JSON+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Extension.swift"; sourceTree = "<group>"; };
 		D034836F233D929200A1577F /* String+SimpleHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleHTML.swift"; sourceTree = "<group>"; };
 		D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+HTML.swift"; sourceTree = "<group>"; };
 		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
@@ -314,6 +320,9 @@
 				D0F3818E21CC681A00662A11 /* UIColor+Hex.swift */,
 				D0F3819621CC697600662A11 /* UIControl+addAction.swift */,
 				D0F3825121CFB58D00662A11 /* UIView+tapGesture.swift */,
+				D023A907235CA12C00C5A2F3 /* Date+Extension.swift */,
+				D023A909235CA18E00C5A2F3 /* Formatter+Extension.swift */,
+				D023A90B235CA23500C5A2F3 /* JSON+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -604,6 +613,7 @@
 				D0B862ED22FA70B9002E9FB4 /* DevUtils.swift in Sources */,
 				D0B3AB6623402CE700BF4489 /* BirthdayFormatter.swift in Sources */,
 				D0B3AB81234142A900BF4489 /* String+InverseDate.swift in Sources */,
+				D023A908235CA12C00C5A2F3 /* Date+Extension.swift in Sources */,
 				D0B3AB6023402C7800BF4489 /* NoRuleFormatter.swift in Sources */,
 				D0B3AB5E23402BB500BF4489 /* ZipCodeFormatter.swift in Sources */,
 				D0348372233D93F600A1577F /* NSMutableAttributedString+HTML.swift in Sources */,
@@ -616,6 +626,7 @@
 				D0F3824321CFB54300662A11 /* UIView+constraint.swift in Sources */,
 				D0F3819721CC697600662A11 /* UIControl+addAction.swift in Sources */,
 				D0F3824D21CFB57E00662A11 /* String+heightWithConstrainedWidth.swift in Sources */,
+				D023A90A235CA18E00C5A2F3 /* Formatter+Extension.swift in Sources */,
 				D0F3825721CFB5A300662A11 /* String+Extensions.swift in Sources */,
 				D0B3AB6423402CC700BF4489 /* CNPJFormatter.swift in Sources */,
 				D0F3823D21CFB34700662A11 /* MLViewConfiguration.swift in Sources */,
@@ -634,6 +645,7 @@
 				D0F3819421CC68A500662A11 /* MLMath.swift in Sources */,
 				D0B3AB6223402CA300BF4489 /* CPFFormatter.swift in Sources */,
 				D0F3826121CFB5B400662A11 /* String+Character.swift in Sources */,
+				D023A90C235CA23500C5A2F3 /* JSON+Extension.swift in Sources */,
 				D01FD2522339AA2200B8BBD6 /* GeneralFormatter.swift in Sources */,
 				D0F3819521CC68A500662A11 /* ClosureAttach.swift in Sources */,
 				D0F3825221CFB58E00662A11 /* UIView+tapGesture.swift in Sources */,
@@ -795,7 +807,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.7.0;
+				MARKETING_VERSION = 1.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -818,7 +830,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.7.0;
+				MARKETING_VERSION = 1.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;

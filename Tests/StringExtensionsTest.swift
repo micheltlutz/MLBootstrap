@@ -24,4 +24,11 @@ class StringExtensionsTest: XCTestCase {
 
         XCTAssertEqual(dbDateBirth, "13/01/1988")
     }
+
+    func testCleanEmail() {
+        let email = "michel_lutz123@icloud.com"
+        let onlynumbersAndChar = email.removeOccurrences()
+
+        XCTAssertEqual(onlynumbersAndChar, "michellutz123icloudcom")
+    }
 }
