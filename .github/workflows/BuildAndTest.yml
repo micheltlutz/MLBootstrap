@@ -3,7 +3,7 @@ name: Build
 jobs:
   build:
     name: Build
-    runs-on: macOS-10.14
+    runs-on: macOS-latest
     strategy:
         matrix:
           destination: ['platform=iOS Simulator,OS=12.4,name=iPhone X']
