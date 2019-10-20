@@ -34,6 +34,7 @@ public class MLPickerField: MLField, MLPickerFieldProtocol {
     public var selectedOption: String?
     public var options: MLPickerFieldOptionsType
     public var didChangeOption: ((_ option: String) -> Void)?
+    private var toolBarTint: UIColor = UIColor.systemBlue
     private let pickerView: UIPickerView = {
         let pickerView = UIPickerView()
         pickerView.backgroundColor = .white
@@ -44,14 +45,18 @@ public class MLPickerField: MLField, MLPickerFieldProtocol {
 
      - Parameter placeholder: ***String*** Text to show in placeholder and label field
      - Parameter options: ***MLPickerFieldOptionsType*** an MLPickerFieldOptionsType
+     - Parameter toolBarTint: ***UIColor*** an UIColor default UIColor.systemBlue
      */
-    public init(placeHolder: String, options: MLPickerFieldOptionsType) {
+    public init(placeHolder: String,
+                options: MLPickerFieldOptionsType,
+                toolBarTint: UIColor = UIColor.systemBlue) {
         self.options = options
 
         super.init(placeHolder: placeHolder)
 
         rightViewMode = .always
         returnKeyType = .done
+        self.toolBarTint = toolBarTint
         pickerView.delegate = self
         pickerView.dataSource = self
         makeToolBar()
@@ -60,7 +65,7 @@ public class MLPickerField: MLField, MLPickerFieldProtocol {
     // MARK: - Config Picker View
     private func makeToolBar() {
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
-        toolBar.tintColor = UIColor.lightGray
+        toolBar.tintColor = toolBarTint
         let btCancel = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
         let btDone = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
         let btFlexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)

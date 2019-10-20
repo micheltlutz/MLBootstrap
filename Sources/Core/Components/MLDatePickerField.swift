@@ -11,25 +11,30 @@ import UIKit
 public class MLDatePickerField: MLField {
     private let datePicker = UIDatePicker()
     public var dateFormmater = "dd/MM/yyyy"
+    private var toolBarTint: UIColor = UIColor.systemBlue
     /**
      Initilizer
 
      - Parameter placeholder: ***String*** Text to show in placeholder and label field
      - Parameter datePickerMode: ***UIDatePicker.Mode*** an UIDatePicker.Mode default .date
+     - Parameter toolBarTint: ***UIColor*** an UIColor default UIColor.systemBlue
      */
-    public init(placeHolder: String, datePickerMode: UIDatePicker.Mode = .date) {
+    public init(placeHolder: String,
+                datePickerMode: UIDatePicker.Mode = .date,
+                toolBarTint: UIColor = UIColor.systemBlue) {
         super.init(placeHolder: placeHolder)
 
         rightViewMode = .always
         returnKeyType = .done
         datePicker.datePickerMode = datePickerMode
+        self.toolBarTint = toolBarTint
         makeToolBar()
     }
 
     // MARK: - Config Picker View
     private func makeToolBar() {
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
-        toolBar.tintColor = UIColor.lightGray
+        toolBar.tintColor = toolBarTint
         let btCancel = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
         let btDone = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
         let btFlexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
