@@ -9,25 +9,21 @@ jobs:
           destination: ['platform=iOS Simulator,OS=12.4,name=iPhone X']
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v1
       - name: Build
         run: |
-          xcodebuild clean build \
-          -project MLBootstrap.xcodeproj \
-          -scheme MLBootstrap-iOS \
-          -destination "${destination}" \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean build -project MLBootstrap.xcodeproj -scheme MLBootstrap-iOS -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
   test:
     name: Test
-    runs-on: macOS-10.14
+    runs-on: macOS-latest
     strategy:
         matrix:
           destination: ['platform=iOS Simulator,OS=12.4,name=iPhone X']
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v1
       - name: Test
         run: |
           xcodebuild \
