@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Xcode-Select
-        run: xcode-select -switch /Applications/Xcode_11.1.app
+        run: sudo xcode-select -switch /Applications/Xcode_11.1.app
       - name: Build
         run: |
           xcodebuild clean build \
@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Xcode-Select
-        run: xcode-select -switch /Applications/Xcode_11.1.app
+        run: sudo xcode-select -switch /Applications/Xcode_11.1.app
       - name: Test
         run: |
           xcodebuild \
