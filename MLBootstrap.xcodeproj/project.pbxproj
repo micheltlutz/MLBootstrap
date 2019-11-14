@@ -19,6 +19,7 @@
 		D023A90C235CA23500C5A2F3 /* JSON+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023A90B235CA23500C5A2F3 /* JSON+Extension.swift */; };
 		D0348370233D929200A1577F /* String+SimpleHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034836F233D929200A1577F /* String+SimpleHTML.swift */; };
 		D0348372233D93F600A1577F /* NSMutableAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */; };
+		D03C55AA237D014E00915A22 /* MLStackLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C55A9237D014E00915A22 /* MLStackLabel.swift */; };
 		D09102FC2308BE5800EC5D45 /* MLSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */; };
 		D0B3AB5E23402BB500BF4489 /* ZipCodeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB5D23402BB500BF4489 /* ZipCodeFormatter.swift */; };
 		D0B3AB6023402C7800BF4489 /* NoRuleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB5F23402C7800BF4489 /* NoRuleFormatter.swift */; };
@@ -94,6 +95,7 @@
 		D023A90B235CA23500C5A2F3 /* JSON+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Extension.swift"; sourceTree = "<group>"; };
 		D034836F233D929200A1577F /* String+SimpleHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleHTML.swift"; sourceTree = "<group>"; };
 		D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+HTML.swift"; sourceTree = "<group>"; };
+		D03C55A9237D014E00915A22 /* MLStackLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackLabel.swift; sourceTree = "<group>"; };
 		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
 		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
 		D0B3AB5D23402BB500BF4489 /* ZipCodeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeFormatter.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				D0B3AB8A2341583400BF4489 /* MLPickerField.swift */,
 				D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */,
 				D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */,
+				D03C55A9237D014E00915A22 /* MLStackLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				D023A90A235CA18E00C5A2F3 /* Formatter+Extension.swift in Sources */,
 				D0F3825721CFB5A300662A11 /* String+Extensions.swift in Sources */,
 				D0B3AB6423402CC700BF4489 /* CNPJFormatter.swift in Sources */,
+				D03C55AA237D014E00915A22 /* MLStackLabel.swift in Sources */,
 				D0F3823D21CFB34700662A11 /* MLViewConfiguration.swift in Sources */,
 				D09102FC2308BE5800EC5D45 /* MLSimpleButton.swift in Sources */,
 				D0F3818D21CC67B700662A11 /* MLColorPallet.swift in Sources */,
@@ -669,7 +673,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.8.1;
+				MARKETING_VERSION = 1.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
@@ -692,7 +696,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.8.1;
+				MARKETING_VERSION = 1.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLBootstrap;
 				PRODUCT_NAME = MLBootstrap;
 				SKIP_INSTALL = YES;
