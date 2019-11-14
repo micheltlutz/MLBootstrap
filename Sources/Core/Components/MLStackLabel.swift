@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MLStackLabel: UIStackView {
-    let label: MLLabel
+public class MLStackLabel: UIStackView {
+    public let label: MLLabel
     private let padding: UIEdgeInsets
 
-    init(text: String, padding: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)) {
+    public init(text: String, padding: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)) {
         self.label = MLLabel(text: text)
         self.padding = padding
 
@@ -22,7 +22,7 @@ class MLStackLabel: UIStackView {
     }
 
     @available(*, unavailable)
-    required init(coder: NSCoder) {
+    required public init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
