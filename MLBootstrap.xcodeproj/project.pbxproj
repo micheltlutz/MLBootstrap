@@ -21,6 +21,7 @@
 		D0348372233D93F600A1577F /* NSMutableAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348371233D93F600A1577F /* NSMutableAttributedString+HTML.swift */; };
 		D03C55AA237D014E00915A22 /* MLStackLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03C55A9237D014E00915A22 /* MLStackLabel.swift */; };
 		D09102FC2308BE5800EC5D45 /* MLSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */; };
+		D0A4FE1723BEC65D00962A4B /* MLImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4FE1623BEC65D00962A4B /* MLImagePicker.swift */; };
 		D0B3AB5E23402BB500BF4489 /* ZipCodeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB5D23402BB500BF4489 /* ZipCodeFormatter.swift */; };
 		D0B3AB6023402C7800BF4489 /* NoRuleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB5F23402C7800BF4489 /* NoRuleFormatter.swift */; };
 		D0B3AB6223402CA300BF4489 /* CPFFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3AB6123402CA300BF4489 /* CPFFormatter.swift */; };
@@ -98,6 +99,7 @@
 		D03C55A9237D014E00915A22 /* MLStackLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackLabel.swift; sourceTree = "<group>"; };
 		D07CC9BD231AA1A200BF1B2F /* MLBootstrapBinary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MLBootstrapBinary.json; sourceTree = "<group>"; };
 		D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSimpleButton.swift; sourceTree = "<group>"; };
+		D0A4FE1623BEC65D00962A4B /* MLImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLImagePicker.swift; sourceTree = "<group>"; };
 		D0B3AB5D23402BB500BF4489 /* ZipCodeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeFormatter.swift; sourceTree = "<group>"; };
 		D0B3AB5F23402C7800BF4489 /* NoRuleFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRuleFormatter.swift; sourceTree = "<group>"; };
 		D0B3AB6123402CA300BF4489 /* CPFFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFFormatter.swift; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 				D09102FB2308BE5800EC5D45 /* MLSimpleButton.swift */,
 				D0F3823C21CFB34700662A11 /* MLViewConfiguration.swift */,
 				D03C55A9237D014E00915A22 /* MLStackLabel.swift */,
+				D0A4FE1623BEC65D00962A4B /* MLImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				D0F3825C21CFB5AC00662A11 /* String+toCamelCase.swift in Sources */,
 				D0F3818721CC5F7300662A11 /* MLButton.swift in Sources */,
 				D0F3818921CC60BB00662A11 /* MLField.swift in Sources */,
+				D0A4FE1723BEC65D00962A4B /* MLImagePicker.swift in Sources */,
 				D0F3824821CFB55300662A11 /* AutoLayout+Extensions.swift in Sources */,
 				D0F3818B21CC652100662A11 /* MLBootstrapSkin.swift in Sources */,
 				D0B3ABA12342CEDF00BF4489 /* MLQuestionCheck.swift in Sources */,

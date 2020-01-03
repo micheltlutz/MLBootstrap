@@ -19,6 +19,7 @@ public protocol MLColorPalletProtocol {
 public enum MLColorPallet: String, MLColorPalletProtocol {
     case red = "BC233E"
     case darkRed = "A31E36"
+    case exitRed = "EA3737"
     case deepOceanBlue = "2C3E50"
     case deepOceanDarkBlue = "29394A"
     case pink = "FF2D55"
