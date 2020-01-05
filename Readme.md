@@ -43,7 +43,7 @@ $ brew install carthage
 To integrate MLBootstrap into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLBootstrap" ~> 1.10.0
+github "micheltlutz/MLBootstrap" ~> 1.11.0
 ```
 
 In Terminal using:
@@ -77,7 +77,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.10.0"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.11.0"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])
@@ -286,6 +286,37 @@ Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (_) in
 	self.questionCheckCustom.question = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 }
 ```
+### MLTontiatorView
+
+#### With color
+
+```swift
+ let viewActivitySmall = MLTontiatorView()
+ viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
+ viewActivitySmall.spinnerColor = UIColor.purple
+ self.view.addSubview(viewActivitySmall)
+ viewActivitySmall.startAnimating()
+```
+
+#### With image
+
+```swift
+ let viewActivitySmall = MLTontiatorView()
+ viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
+ viewActivitySmall.spinnerImage = UIImage(named: "mySpinnerImage")
+ self.view.addSubview(viewActivitySmall)
+ viewActivitySmall.startAnimating()
+```
+
+#### Result
+
+<p align="center">
+ <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/TOTIATORVIEW.gif">
+ 
+  <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/imageSpinner.gif">
+ </p>
+
+
 
 ### String Utils
 
