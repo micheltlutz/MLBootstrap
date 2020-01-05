@@ -1,12 +1,16 @@
 # MLBootstrap
 
 [![Platforms](https://img.shields.io/cocoapods/p/MLBootstrap.svg)](https://cocoapods.org/pods/MLBootstrap)
-[![License](https://img.shields.io/cocoapods/l/MLBootstrap.svg)](https://raw.githubusercontent.com/micheltlutz/MLBootstrap/develop/LICENSE)
+[![License](https://img.shields.io/github/license/micheltlutz/MLBootstrap)](https://raw.githubusercontent.com/micheltlutz/MLBootstrap/develop/LICENSE)
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 [![codebeat badge](https://codebeat.co/badges/c7ebffe7-0feb-44f0-8c4f-b7d0ce18ef0e)](https://codebeat.co/projects/github-com-micheltlutz-mlbootstrap-develop)
 
+[![codecov](https://codecov.io/gh/micheltlutz/MLBootstrap/branch/develop/graph/badge.svg)](https://codecov.io/gh/micheltlutz/MLBootstrap)
+
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 Bootstrap for swift apps
 
@@ -39,7 +43,7 @@ $ brew install carthage
 To integrate MLBootstrap into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLBootstrap" ~> 1.8.0
+github "micheltlutz/MLBootstrap" ~> 1.11.0
 ```
 
 In Terminal using:
@@ -73,7 +77,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLBootstrap",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.8.0"))
+        .package(url: "https://github.com/micheltlutz/MLBootstrap.git", .upToNextMajor(from: "1.11.0"))
     ],
     targets: [
         .target(name: "HelloMLBootstrap", dependencies: ["MLBootstrap"])
@@ -282,6 +286,37 @@ Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (_) in
 	self.questionCheckCustom.question = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 }
 ```
+### MLTontiatorView
+
+#### With color
+
+```swift
+ let viewActivitySmall = MLTontiatorView()
+ viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
+ viewActivitySmall.spinnerColor = UIColor.purple
+ self.view.addSubview(viewActivitySmall)
+ viewActivitySmall.startAnimating()
+```
+
+#### With image
+
+```swift
+ let viewActivitySmall = MLTontiatorView()
+ viewActivitySmall.spinnerSize = .MLSpinnerSizeSmall
+ viewActivitySmall.spinnerImage = UIImage(named: "mySpinnerImage")
+ self.view.addSubview(viewActivitySmall)
+ viewActivitySmall.startAnimating()
+```
+
+#### Result
+
+<p align="center">
+ <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/TOTIATORVIEW.gif">
+ 
+  <img width="300" height="238"src="http://micheltlutz.me/imagens/projetos/MLTontiatorView/imageSpinner.gif">
+ </p>
+
+
 
 ### String Utils
 

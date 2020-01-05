@@ -1,4 +1,4 @@
-language: objective-c
+language: swift
 osx_image: xcode10
 branches:
   only:
@@ -93,3 +93,6 @@ jobs:
           skip_cleanup: true
           on:
             tags: true
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 0d40e83f-f749-40d8-93c8-d99aabf4d602
